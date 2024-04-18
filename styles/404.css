@@ -37,7 +37,7 @@
         margin: 0;
     }
 
-    main>article {
+    main > article {
         flex: 1;
         height: auto;
         border-radius: 48px;
@@ -49,11 +49,11 @@
         padding: 120px 0px;
         margin: 0;
         background-color: white;
-        border: 1px solid #74777F;
+        border: 1px solid #74777f;
         box-sizing: border-box;
     }
 
-    main>article>figure {
+    main > article > figure {
         flex: 1;
         min-width: 680px;
         height: auto;
@@ -64,7 +64,7 @@
         margin: 0;
     }
 
-    main>article>.oops-zone {
+    main > article > .oops-zone {
         flex: 1;
         min-width: 680px;
         margin-left: 40px;
@@ -76,7 +76,7 @@
         justify-content: center;
     }
 
-    main>article>.oops-zone>.apologize {
+    main > article > .oops-zone > .apologize {
         align-self: stretch;
         height: auto;
         display: flex;
@@ -86,7 +86,7 @@
         justify-content: center;
     }
 
-    main>article>.oops-zone>.apologize>.title {
+    main > article > .oops-zone > .apologize > .title {
         width: auto;
         height: auto;
         font-family: "IBMPlexSans-SemiBold";
@@ -95,21 +95,21 @@
         text-align: left;
         padding: 0;
         margin: 0;
-        color: #1A1B20;
+        color: #1a1b20;
     }
 
-    main>article>.oops-zone>.apologize>p {
+    main > article > .oops-zone > .apologize > p {
         align-self: stretch;
         height: auto;
         font-family: "IBMPlexSans-Regular";
         font-size: 32px;
         line-height: 40px;
         letter-spacing: 0;
-        color: #1A1B20;
+        color: #1a1b20;
         margin: 0;
     }
 
-    main>article>.oops-zone>a {
+    main > article > .oops-zone > a {
         width: auto;
         height: auto;
         border-radius: 30px;
@@ -117,7 +117,7 @@
         justify-content: center;
         padding: 20px 36px;
         margin: 0;
-        background-color: #007BFF;
+        background-color: #007bff;
         font-family: "IBMPlexSans-Medium";
         font-size: 16px;
         line-height: 20px;
@@ -127,12 +127,12 @@
         transition: 300ms ease-out;
     }
 
-    main>article>.oops-zone>a:hover {
+    main > article > .oops-zone > a:hover {
         opacity: 0.8;
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
     body {
         margin: 0;
         width: 100%;
@@ -154,7 +154,7 @@
         justify-content: center;
     }
 
-    main>article {
+    main > article {
         margin: 0;
         flex: 1;
         height: auto;
@@ -165,14 +165,14 @@
         justify-content: center;
         padding: 120px 0px;
         background-color: white;
-        border: 1px solid #74777F;
+        border: 1px solid #74777f;
     }
 
-    main>article>figure {
+    main > article > figure {
         display: none;
     }
 
-    main>article>.oops-zone {
+    main > article > .oops-zone {
         flex: 1;
         height: auto;
         display: flex;
@@ -183,7 +183,7 @@
         gap: 24px;
     }
 
-    main>article>.oops-zone>.apologize {
+    main > article > .oops-zone > .apologize {
         align-self: stretch;
         height: auto;
         display: flex;
@@ -193,7 +193,7 @@
         gap: 20px;
     }
 
-    main>article>.oops-zone>.apologize>.title {
+    main > article > .oops-zone > .apologize > .title {
         width: auto;
         height: auto;
         font-family: "IBMPlexSans-SemiBold";
@@ -201,10 +201,10 @@
         line-height: 44px;
         letter-spacing: 0;
         text-align: center;
-        color: #1A1B20;
+        color: #1a1b20;
     }
 
-    main>article>.oops-zone>.apologize>p {
+    main > article > .oops-zone > .apologize > p {
         margin: 0;
         align-self: stretch;
         height: auto;
@@ -213,10 +213,10 @@
         line-height: 32px;
         letter-spacing: 0;
         text-align: left;
-        color: #1A1B20;
+        color: #1a1b20;
     }
 
-    main>article>.oops-zone>a {
+    main > article > .oops-zone > a {
         width: auto;
         height: auto;
         border-radius: 30px;
@@ -224,7 +224,7 @@
         justify-content: center;
         padding: 20px 36px;
         margin: 0;
-        background-color: #007BFF;
+        background-color: #007bff;
         font-family: "IBMPlexSans-Medium";
         font-size: 16px;
         line-height: 20px;
@@ -234,7 +234,7 @@
         transition: 300ms ease-out;
     }
 
-    main>article>.oops-zone>a:hover {
+    main > article > .oops-zone > a:hover {
         opacity: 0.8;
     }
 }
