@@ -57,17 +57,12 @@ let targetElements = [
     document.querySelector("#introduction > .about-me > figure"),
     document.querySelector("#introduction > .about-me > .context-container > .title"),
     document.querySelector("#introduction > .about-me > .context-container > p"),
-    document.querySelector(
-        "#introduction > .sub-introductions-container > .sub-introduction-1-container > .sub-introduction-1"
-    ),
-    document.querySelector(
-        "#introduction > .sub-introductions-container > .sub-introduction-2-container > .sub-introduction-2 "
-    ),
     document.querySelector("#introduction > .about-me > .figure-and-sub-introductions > figure"),
     document.querySelector("#recent-project-container > .title "),
     document.querySelector("#joining-team-request-container > .body-container > .title "),
     document.querySelector("footer > .social-media-container > span ")
 ]
+
 document
     .querySelectorAll("#drawer-menu > .social-media-container > .social-media-button")
     .forEach((element) => targetElements.push(element))
@@ -81,7 +76,9 @@ document
         "#introduction > .about-me > .figure-and-sub-introductions > .sub-introductions-container > .sub-introduction"
     )
     .forEach((element) => targetElements.push(element))
-
+document
+    .querySelectorAll("#introduction > .sub-introductions-container > .sub-introduction-container > .sub-introduction")
+    .forEach((element) => targetElements.push(element))
 document
     .querySelectorAll("#recent-project-container > .projects > .project > .name ")
     .forEach((element) => targetElements.push(element))

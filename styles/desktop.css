@@ -455,7 +455,7 @@
         justify-content: space-between;
     }
 
-    #introduction > .sub-introductions-container > .sub-introduction-1-container {
+    #introduction > .sub-introductions-container > .sub-introduction-container {
         flex: 1;
         height: auto;
         display: flex;
@@ -465,7 +465,7 @@
         padding-right: 32px;
     }
 
-    #introduction > .sub-introductions-container > .sub-introduction-1-container > .sub-introduction-1 {
+    #introduction > .sub-introductions-container > .sub-introduction-container > .sub-introduction {
         flex: 1;
         height: auto;
         border-radius: 32px;
@@ -477,10 +477,10 @@
         padding: 20px;
         background-color: #ededf4;
         border: 1px solid #74777f;
-        animation: slide-in-left 200ms ease-out;
+        animation: float-in-up 200ms ease-out;
     }
 
-    #introduction > .sub-introductions-container > .sub-introduction-1-container > .sub-introduction-1 > .title {
+    #introduction > .sub-introductions-container > .sub-introduction-container > .sub-introduction > .title {
         height: auto;
         display: flex;
         align-items: center;
@@ -492,7 +492,7 @@
         color: #1a1b20;
     }
 
-    #introduction > .sub-introductions-container > .sub-introduction-1-container > .sub-introduction-1 > p {
+    #introduction > .sub-introductions-container > .sub-introduction-container > .sub-introduction > p {
         padding: 0;
         margin: 0;
         height: auto;
@@ -505,11 +505,7 @@
         color: #1a1b20;
     }
 
-    #introduction
-        > .sub-introductions-container
-        > .sub-introduction-1-container
-        > .sub-introduction-1
-        > .cta-container {
+    #introduction > .sub-introductions-container > .sub-introduction-container > .sub-introduction > .cta-container {
         height: auto;
         display: flex;
         flex-direction: column;
@@ -521,8 +517,8 @@
 
     #introduction
         > .sub-introductions-container
-        > .sub-introduction-1-container
-        > .sub-introduction-1
+        > .sub-introduction-container
+        > .sub-introduction
         > .cta-container
         > a {
         height: auto;
@@ -537,97 +533,8 @@
 
     #introduction
         > .sub-introductions-container
-        > .sub-introduction-1-container
-        > .sub-introduction-1
-        > .cta-container
-        > a:hover {
-        text-decoration: underline;
-    }
-
-    #introduction > .sub-introductions-container > .sub-introduction-2-container {
-        flex: 1;
-        align-self: stretch;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        padding-left: 32px;
-    }
-
-    #introduction > .sub-introductions-container > .sub-introduction-2-container > .sub-introduction-2 {
-        flex: 1;
-        align-self: stretch;
-        border-radius: 32px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 20px;
-        padding: 20px;
-        background-color: #ededf4;
-        border: 1px solid #74777f;
-        animation: slide-in-right 350ms ease-out;
-    }
-
-    #introduction > .sub-introductions-container > .sub-introduction-2-container > .sub-introduction-2 > .title {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        font-family: "IBMPlexSans-Regular";
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
-        color: #1a1b20;
-    }
-
-    #introduction > .sub-introductions-container > .sub-introduction-2-container > .sub-introduction-2 > p {
-        padding: 0;
-        margin: 0;
-        height: auto;
-        display: flex;
-        font-family: "IBMPlexSans-Regular";
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        text-align: left;
-        color: #1a1b20;
-    }
-
-    #introduction
-        > .sub-introductions-container
-        > .sub-introduction-2-container
-        > .sub-introduction-2
-        > .cta-container {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-        gap: 8px;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-
-    #introduction
-        > .sub-introductions-container
-        > .sub-introduction-2-container
-        > .sub-introduction-2
-        > .cta-container
-        > a {
-        height: auto;
-        align-self: flex-end;
-        font-family: "IBMPlexSans-Medium";
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.1px;
-        text-align: right;
-        text-decoration: none;
-        color: #39693c;
-    }
-
-    #introduction
-        > .sub-introductions-container
-        > .sub-introduction-2-container
-        > .sub-introduction-2
+        > .sub-introduction-container
+        > .sub-introduction
         > .cta-container
         > a:hover {
         text-decoration: underline;
