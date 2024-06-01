@@ -51,8 +51,9 @@ function goTo(target) {
 // Create an intersection observer all the animated elements
 let targetElements = [
     document.querySelector("#personal-statement"),
-    document.querySelector("#personal-statement > .body-container"),
-    document.querySelector("#personal-statement > figure"),
+    document.querySelector("#personal-statement > .personal-info > p.greeting"),
+    document.querySelector("#personal-statement > .personal-info > .location"),
+    document.querySelector("#personal-statement > p.body"),
     document.querySelector("#working-status > span"),
     document.querySelector("#introduction > .about-me > figure"),
     document.querySelector("#introduction > .about-me > .context-container > .title"),
