@@ -1,0 +1,45 @@
+@font-face {
+    font-family: manrope;
+    src: url(../assets/fonts/manrope.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/quicksand.ttf) format("truetype");
+}
+
+:root {
+    --font-family-brand: manrope;
+    --font-family-plain: quicksand;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --type-scale-desktop-line-height: 140%;
+    --type-scale-desktop-root-size: 16px;
+    --type-scale-desktop-scale-up-1: 21px;
+    --type-scale-desktop-scale-up-2: 28px;
+    --type-scale-desktop-scale-up-3: 38px;
+    --type-scale-desktop-scale-up-4: 51px;
+    --type-scale-desktop-scale-up-5: 67px;
+    --type-scale-desktop-scale-down-1: 12px;
+
+    --type-scale-tablet-line-height: 140%;
+    --type-scale-tablet-root-size: 16px;
+    --type-scale-tablet-scale-up-1: 20px;
+    --type-scale-tablet-scale-up-2: 25px;
+    --type-scale-tablet-scale-up-3: 31px;
+    --type-scale-tablet-scale-up-4: 39px;
+    --type-scale-tablet-scale-up-5: 49px;
+    --type-scale-tablet-scale-down-1: 10px;
+
+    --type-scale-mobile-line-height: 120%;
+    --type-scale-mobile-root-size: 14px;
+    --type-scale-mobile-scale-up-1: 16px;
+    --type-scale-mobile-scale-up-2: 18px;
+    --type-scale-mobile-scale-up-3: 20px;
+    --type-scale-mobile-scale-up-4: 22px;
+    --type-scale-mobile-scale-up-5: 25px;
+    --type-scale-mobile-scale-down-1: 9px;
+}

@@ -1,0 +1,24 @@
+:root {
+    --theme-primary: rgba(128, 128, 128, 1);
+    --theme-on-primary: rgba(255, 255, 255, 1);
+
+    --theme-secondary: rgba(160, 160, 160, 1);
+    --theme-on-secondary: rgba(255, 255, 255, 1);
+
+    --theme-surface-shade-1: rgba(221, 221, 221, 1);
+    --theme-surface: rgba(246, 246, 246, 1);
+    --theme-surface-tint-1: rgba(248, 248, 248, 1);
+    --theme-surface-tint-2: rgba(250, 250, 250, 1);
+    --theme-surface-tint-3: rgba(251, 251, 251, 1);
+    --theme-surface-tint-4: rgba(253, 253, 253, 1);
+    --theme-surface-tint-5: rgba(255, 255, 255, 1);
+
+    --theme-shadow-layer-1: rgba(0, 0, 0, 0.15);
+    --theme-shadow-layer-2: rgba(0, 0, 0, 0.2);
+
+    --theme-gradient-1: rgba(228, 72, 87, 1);
+    --theme-gradient-2: rgba(199, 17, 225, 1);
+    --theme-gradient-3: rgba(127, 82, 255, 1);
+    --theme-gradient-4: rgba(255, 193, 7, 1);
+    --theme-gradient-5: rgba(40, 167, 69, 1);
+}

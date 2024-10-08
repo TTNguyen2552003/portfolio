@@ -1,0 +1,12 @@
+:root {
+    --gap-positive-50: 2px;
+    --gap-positive-100: 4px;
+    --gap-positive-150: 6px;
+    --gap-positive-200: 8px;
+    --gap-positive-300: 12px;
+    --gap-positive-600: 24px;
+    --gap-positive-700: 28px;
+    --gap-positive-1200: 48px;
+    --gap-positive-1600: 64px;
+    --gap-positive-2400: 96px;
+}
