@@ -12,6 +12,11 @@
     --theme-surface-tint-3: rgba(251, 251, 251, 1);
     --theme-surface-tint-4: rgba(253, 253, 253, 1);
     --theme-surface-tint-5: rgba(255, 255, 255, 1);
+    --theme-on-surface-shade-1: rgba(34, 34, 34, 1);
+    --theme-on-surface-shade-2: rgba(19, 19, 19, 1);
+    --theme-on-surface: rgba(48, 48, 48, 1);
+    --theme-on-surface-tint-1: rgba(110, 110, 110, 1);
+    --theme-on-surface-tint-2: rgba(172, 172, 172, 1);
 
     --theme-shadow-layer-1: rgba(0, 0, 0, 0.15);
     --theme-shadow-layer-2: rgba(0, 0, 0, 0.2);

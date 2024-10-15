@@ -1,11 +1,11 @@
 @font-face {
     font-family: manrope;
-    src: url(../assets/fonts/manrope.ttf) format("truetype");
+    src: url(../../assets/fonts/manrope.ttf) format("truetype");
 }
 
 @font-face {
     font-family: quicksand;
-    src: url(../assets/fonts/quicksand.ttf) format("truetype");
+    src: url(../../assets/fonts/quicksand.ttf) format("truetype");
 }
 
 :root {

@@ -1,0 +1,303 @@
+@keyframes spin {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding-top: var(--gap-positive-4000);
+        gap: var(--gap-positive-2400);
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-2400);
+        align-items: center;
+        z-index: 0;
+
+        section#about-the-fold {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .about-the-fold__background {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 50%;
+                z-index: 0;
+            }
+
+            .about-the-fold__foreground {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-positive-400);
+                align-items: center;
+                z-index: 1;
+            }
+
+            .about-the-fold__avatar {
+                position: relative;
+                width: 160px;
+                height: 160px;
+                border-radius: var(--shape-full);
+                overflow: hidden;
+
+                .avatar__frame {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 160px;
+                    height: 160px;
+                }
+
+                img {
+                    position: absolute;
+                    width: 140px;
+                    height: 140px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    object-fit: fill;
+                }
+            }
+
+            .about-the-fold__greeting {
+                font: var(--typography-desktop-title-hero);
+                background-image: linear-gradient(
+                    to right,
+                    var(--theme-gradient-1),
+                    var(--theme-gradient-2),
+                    var(--theme-gradient-3)
+                );
+                background-clip: text;
+                color: transparent;
+            }
+
+            .about-the-fold__location {
+                display: flex;
+                gap: var(--gap-positive-300);
+                align-items: center;
+
+                .location__icon {
+                    width: var(--icon-size-medium);
+                    height: var(--icon-size-medium);
+                }
+
+                .location__city {
+                    font: var(--typography-desktop-heading);
+                    color: var(--theme-on-surface-shade-1);
+                }
+            }
+
+            .about-the-fold__personal-statement {
+                font: var(--typography-desktop-subheading);
+                text-align: center;
+                color: var(--theme-on-surface-tint-1);
+            }
+        }
+
+        .social-media {
+            display: flex;
+            gap: var(--gap-positive-1600);
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        section#about {
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-700);
+            align-items: center;
+
+            .section__title {
+                font: var(--typography-desktop-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .about-section__introduction-cards {
+                height: auto;
+                width: 100%;
+                display: flex;
+                gap: var(--gap-positive-400);
+            }
+        }
+
+        section#recent-projects {
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-600);
+            align-items: center;
+
+            .section__title {
+                font: var(--typography-desktop-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .projects-container {
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                gap: var(--gap-positive-1200);
+                align-items: flex-start;
+                padding: var(--gap-positive-1200) var(--gap-positive-700) 0 var(--gap-positive-700);
+                border-radius: var(--shape-large);
+                background-color: var(--theme-surface-tint-2);
+                box-shadow: var(--elevation-low);
+            }
+
+            .project-thumbnails {
+                width: 100%;
+                min-width: 480px;
+                min-height: 480px;
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-positive-2400);
+                align-items: center;
+                overflow: hidden;
+            }
+
+            .project-thumbnail {
+                width: 480px;
+
+                img {
+                    width: 480px;
+                    object-fit: contain;
+                }
+            }
+
+            .projects--short {
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-positive-700);
+                align-items: flex-start;
+                padding: var(--gap-positive-600) var(--gap-positive-700);
+                border-radius: var(--shape-medium);
+                background: var(--theme-surface-tint-2);
+                box-shadow: var(--elevation-extra-low);
+            }
+
+            .project--short {
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .project--short__logo-and-name {
+                    box-sizing: border-box;
+                    display: flex;
+                    gap: var(--gap-positive-400);
+                    align-items: center;
+                }
+
+                .project--short__logo {
+                    width: var(--icon-size-small);
+                    height: var(--icon-size-small);
+                    object-fit: contain;
+                    box-shadow: var(--elevation-extra-low);
+                }
+
+                .project--short__name {
+                    font: var(--typography-desktop-label);
+                    color: var(--theme-on-surface-shade-2);
+                }
+
+                .project--short__expand-button {
+                    width: var(--icon-size-small);
+                    height: var(--icon-size-small);
+
+                    img {
+                        width: var(--icon-size-small);
+                        height: var(--icon-size-small);
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-1600);
+        align-items: center;
+        padding: var(--gap-positive-700) 0;
+        background-color: var(--theme-surface-shade-1);
+        z-index: 0;
+
+        .footer__join-request {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-1200);
+            align-items: center;
+
+            .join-request__title {
+                font: var(--typography-desktop-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .join-request__contacts {
+                display: flex;
+                gap: var(--gap-positive-1600);
+                align-items: center;
+            }
+        }
+
+        .footer__animated-android-logo {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+            border-radius: var(--shape-full);
+
+            .animated-android-logo__border-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 320px;
+                height: 320px;
+                z-index: 1;
+                animation: spin 10s linear infinite;
+            }
+
+            svg {
+                width: 320px;
+                height: 320px;
+                z-index: 0;
+            }
+        }
+
+        .footer__android-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 320px;
+            z-index: 0;
+        }
+
+        .footer__copyright {
+            font: var(--typography-desktop-supporting-text);
+            color: var(--theme-on-surface-tint-1);
+        }
+    }
+}

@@ -1,8 +1,0 @@
-:root {
-    --desktop-min-width: 1025px;
-
-    --tablet-min-width: 641px;
-    --tablet-max-width: 1024px;
-
-    --mobile-max-width: 640px;
-}

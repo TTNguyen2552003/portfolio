@@ -4,9 +4,11 @@
     --gap-positive-150: 6px;
     --gap-positive-200: 8px;
     --gap-positive-300: 12px;
+    --gap-positive-400: 16px;
     --gap-positive-600: 24px;
     --gap-positive-700: 28px;
     --gap-positive-1200: 48px;
     --gap-positive-1600: 64px;
     --gap-positive-2400: 96px;
+    --gap-positive-4000: 160px;
 }
