@@ -24,23 +24,17 @@
             align-items: center;
             justify-content: center;
 
+            &:hover {
+                .navigation-bar-item__link {
+                    color: var(--theme-on-surface-tint-1);
+                }
+            }
+
             .navigation-bar-item__link {
                 font: var(--typography-desktop-label);
                 color: var(--theme-on-surface-shade-2);
+                transition: 300ms cubic-bezier(0.25, 1, 0.5, 1);
             }
-        }
-
-        .navigation-bar__indicator {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 104px;
-            height: 52px;
-            border-radius: var(--shape-small);
-            background-color: var(--theme-surface-tint-2);
-            box-shadow: var(--elevation-extra-low);
-            z-index: 0;
         }
     }
 }
@@ -75,19 +69,6 @@
                 font: var(--typography-tablet-label);
                 color: var(--theme-on-surface-shade-2);
             }
-        }
-
-        .navigation-bar__indicator {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 88px;
-            height: 44px;
-            border-radius: var(--shape-small);
-            background-color: var(--theme-surface-tint-2);
-            box-shadow: var(--elevation-extra-low);
-            z-index: 0;
         }
     }
 }

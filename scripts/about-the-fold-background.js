@@ -44,8 +44,9 @@ class AboutTheFoldBackground {
      * Creates an instance of AboutTheFoldBackground and initializes the animation.
      */
     constructor() {
+        this.aboutTheFold = null
         this.canvas = null
-        this.canvasBounding = null
+        this.aboutTheFoldBounding = null
         this.context = null
         this.particles = []
         this.explodeAnimationId = null
@@ -70,13 +71,16 @@ class AboutTheFoldBackground {
      * Sets up the canvas, context, and particle elements for the animation.
      */
     setupElements() {
-        // Setup canvas
-        this.canvas = document.querySelector(".about-the-fold__background")
-        this.canvas.width = this.canvas.parentElement.clientWidth
-        this.canvas.height = this.canvas.parentElement.clientHeight
+        // Setup about the fold section element
+        this.aboutTheFold = document.querySelector("#about-the-fold")
 
-        // Setup canvas bounding
-        this.canvasBounding = this.canvas.getBoundingClientRect()
+        // Setup canvas
+        this.canvas = this.aboutTheFold.querySelector(".about-the-fold__background")
+        this.canvas.width = this.aboutTheFold.clientWidth
+        this.canvas.height = this.aboutTheFold.clientHeight
+
+        // Setup canvasBounding
+        this.aboutTheFoldBounding = this.aboutTheFold.getBoundingClientRect()
 
         // Setup canvas context
         this.context = this.canvas.getContext("2d")
@@ -152,10 +156,8 @@ class AboutTheFoldBackground {
             let easedProgress = this.easeOutQuart(progress)
 
             this.particles.forEach((particle, index) => {
-                particle.coordinates.x =
-                    particle.coordinates.x + easedProgress * (targetDestinations[index].x - particle.coordinates.x)
-                particle.coordinates.y =
-                    particle.coordinates.y + easedProgress * (targetDestinations[index].y - particle.coordinates.y)
+                particle.coordinates.x = particle.coordinates.x + easedProgress * (targetDestinations[index].x - particle.coordinates.x)
+                particle.coordinates.y = particle.coordinates.y + easedProgress * (targetDestinations[index].y - particle.coordinates.y)
             })
 
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
@@ -192,18 +194,14 @@ class AboutTheFoldBackground {
      * Sets up event listeners for mouse interactions to trigger animations.
      */
     setupEventListeners() {
-        let aboutTheFold = this.canvas.parentElement
-
         /**
          * Handles mousemove events to trigger particle movement toward the cursor.
          * @param {MouseEvent} event - The mousemove event.
          */
         let mousemoveEventHandler = (event) => {
-            console.log(event.type)
-
             let cursorCoordinates = new AboutTheFoldBackground.Coordinates(
-                event.clientX - this.canvasBounding.left,
-                event.clientY - this.canvasBounding.top
+                event.clientX - this.aboutTheFoldBounding.left,
+                event.clientY - this.aboutTheFoldBounding.top
             )
 
             let animate = (timestamp) => {
@@ -230,21 +228,24 @@ class AboutTheFoldBackground {
             this.cursorAnimationId = requestAnimationFrame(animate)
         }
 
-        aboutTheFold.addEventListener("mousemove", mousemoveEventHandler)
+        this.aboutTheFold.addEventListener("mousemove", mousemoveEventHandler)
 
-        aboutTheFold.addEventListener("mouseleave", () => {
+        this.aboutTheFold.addEventListener("mouseleave", () => {
             this.cancelAnimation()
             this.explodeAnimation()
         })
 
-        aboutTheFold.addEventListener("mouseenter", () => {
+        this.aboutTheFold.addEventListener("mouseenter", () => {
             this.cancelAnimation()
         })
 
         window.addEventListener("resize", () => {
-            this.canvas.width = this.canvas.parentElement.clientWidth
-            this.canvas.height = this.canvas.parentElement.clientHeight
-            this.canvasBounding = this.canvas.getBoundingClientRect()
+            this.canvas.width = this.aboutTheFold.clientWidth
+            this.canvas.height = this.aboutTheFold.clientHeight
+        })
+
+        window.addEventListener("scroll", () => { 
+            this.aboutTheFoldBounding = this.aboutTheFold.getBoundingClientRect()
         })
     }
 

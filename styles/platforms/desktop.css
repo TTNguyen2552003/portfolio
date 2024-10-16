@@ -75,12 +75,10 @@
 
             .about-the-fold__greeting {
                 font: var(--typography-desktop-title-hero);
-                background-image: linear-gradient(
-                    to right,
-                    var(--theme-gradient-1),
-                    var(--theme-gradient-2),
-                    var(--theme-gradient-3)
-                );
+                background-image: linear-gradient(to right,
+                        var(--theme-gradient-1),
+                        var(--theme-gradient-2),
+                        var(--theme-gradient-3));
                 background-clip: text;
                 color: transparent;
             }

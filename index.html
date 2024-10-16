@@ -60,6 +60,7 @@
         <script src="./scripts/about-the-fold-background.js"></script>
         <script src="./scripts/magnetic-hover.js"></script>
         <script src="./scripts/animated-android-logo-border-frame.js"></script>
+        <script src="./scripts/header-interaction.js"></script>
     </head>
     <body>
         <header class="header">
@@ -75,7 +76,6 @@
                 />
             </a>
             <nav class="navigation-bar">
-                <div class="navigation-bar__indicator"></div>
                 <ul class="navigation-bar__items">
                     <li class="navigation-bar__item">
                         <a
@@ -95,7 +95,7 @@
                     </li>
                     <li class="navigation-bar__item">
                         <a
-                            href="#projects"
+                            href="#recent-projects"
                             magnetic-hover
                             class="navigation-bar-item__link"
                             >Projects</a
@@ -150,7 +150,7 @@
                 </div>
             </section>
             <ul class="social-media">
-                <li class="social-media-item">
+                <li magnetic-hover class="social-media-item">
                     <a
                         href="https://www.linkedin.com/in/ttnguyen2552003"
                         class="social-media-item__link"
@@ -163,7 +163,7 @@
                         <div class="social-media-item__label">Linkedin</div>
                     </a>
                 </li>
-                <li class="social-media-item">
+                <li magnetic-hover class="social-media-item">
                     <a
                         href="https://github.com/TTNguyen2552003"
                         class="social-media-item__link"
@@ -176,7 +176,7 @@
                         <div class="social-media-item__label">Github</div>
                     </a>
                 </li>
-                <li class="social-media-item">
+                <li magnetic-hover class="social-media-item">
                     <a
                         href="https://www.behance.net/ttnguyen2552003"
                         class="social-media-item__link"
@@ -350,11 +350,14 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer
+            class="footer"
+            id="footer"
+        >
             <div class="footer__join-request">
                 <div class="join-request__title">Let me join your team</div>
                 <ul class="join-request__contacts">
-                    <li class="social-media-item">
+                    <li magnetic-hover class="social-media-item">
                         <a
                             href="mailto:trantrongnguyen2552003@gmail.com"
                             class="social-media-item__link"
@@ -367,7 +370,7 @@
                             <div class="social-media-item__label">Gmail</div>
                         </a>
                     </li>
-                    <li class="social-media-item">
+                    <li magnetic-hover class="social-media-item">
                         <a
                             href="https://t.me/TTNguyen2552003"
                             class="social-media-item__link"
@@ -380,7 +383,7 @@
                             <div class="social-media-item__label">Telegram</div>
                         </a>
                     </li>
-                    <li class="social-media-item">
+                    <li magnetic-hover class="social-media-item">
                         <a
                             href="https://wa.link/am9f4t"
                             class="social-media-item__link"

@@ -1,5 +1,5 @@
 @media (min-width: 1025px) {
-    header {
+    .header {
         position: fixed;
         top: var(--gap-positive-600);
         left: 50%;
@@ -8,6 +8,7 @@
         align-items: center;
         gap: var(--gap-positive-4000);
         z-index: 1;
+        transition: 500ms linear;
 
         .header__logo-container {
             width: 72px;
@@ -29,10 +30,14 @@
             display: none;
         }
     }
+
+    .header--hidden {
+        opacity: 0.2;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-    header {
+    .header {
         position: fixed;
         top: var(--gap-positive-600);
         left: 50%;
@@ -64,7 +69,7 @@
 }
 
 @media (max-width: 640px) {
-    header {
+    .header {
         position: fixed;
         top: var(--gap-positive-600);
         left: 50%;
