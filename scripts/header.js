@@ -1,15 +1,15 @@
 /**
  * Singleton instance for the HeaderInteraction class.
  * Stores the instance of header interaction behavior.
- * @type {HeaderInteraction|null}
+ * @type {Header|null}
  */
-let headerInteractionInstance = null
+let header = null
 
 /**
  * Manages the interaction behaviors for the header, such as showing and hiding
  * based on scroll events and hover states.
  */
-class HeaderInteraction {
+class Header {
     /**
      * Delay time in milliseconds before hiding the header after the mouse leaves.
      * @type {number}
@@ -23,9 +23,6 @@ class HeaderInteraction {
     constructor() {
         /** @type {HTMLElement|null} The header element. */
         this.header = null
-
-        /** @type {HTMLElement|null} The tab indicator element within the header. */
-        this.tabIndicator = null
 
         /** @type {boolean} Indicates if the header is currently being hovered. */
         this.isHovered = false
@@ -52,8 +49,6 @@ class HeaderInteraction {
      */
     setupElements() {
         this.header = document.querySelector("header")
-
-        this.tabIndicator = this.header.querySelector(".navigation-bar__indicator")
     }
 
     /**
@@ -121,7 +116,7 @@ class HeaderInteraction {
         // Set a new timeout to hide the header after the specified delay.
         this.hidingHeaderTimeDelayId = setTimeout(() => {
             this.header.classList.add("header--hidden")
-        }, HeaderInteraction.HIDING_HEADER_TIME_DELAY)
+        }, Header.HIDING_HEADER_TIME_DELAY)
     }
 
     /**
@@ -131,19 +126,11 @@ class HeaderInteraction {
         clearTimeout(this.hidingHeaderTimeDelayId)
         this.hidingHeaderTimeDelayId = null
     }
-
-    /**
-     * Changes the position of the tab indicator based on the given index.
-     * @param {number} index - The index for positioning the tab indicator.
-     */
-    changeIndicatorCoordinates(index) {
-        console.log(index)
-    }
 }
 
 /**
  * Instantiates the HeaderInteraction once the DOM content is loaded.
  */
 window.addEventListener("DOMContentLoaded", () => {
-    headerInteractionInstance = new HeaderInteraction()
+    header = new Header()
 })
