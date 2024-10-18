@@ -104,24 +104,11 @@ class RecentProjects {
      * @private
      */
     setupEventListeners() {
-        let translateThumbnails = (selectedIndex) => {
-            let translateY = this.calculateTranslateY(selectedIndex)
-            this.thumbnails.forEach((thumbnail, thumbnailIndex) => {
-                if (thumbnailIndex < selectedIndex) {
-                    thumbnail.style.transform = `rotate(-${RecentProjects.TRANSFORM_ROTATION}deg) translate(${RecentProjects.TRANSFORM_TRANSLATE_X}%, ${translateY}px)`
-                } else if (thumbnailIndex == selectedIndex) {
-                    thumbnail.style.transform = `translateY(${translateY}px)`
-                } else {
-                    thumbnail.style.transform = `rotate(${RecentProjects.TRANSFORM_ROTATION}deg) translate(${RecentProjects.TRANSFORM_TRANSLATE_X}%, ${translateY}px)`
-                }
-            })
-        }
-
         this.projectShortcuts.forEach((shortcut, projectShortcutIndex) => {
             shortcut.addEventListener("mouseover", () => {
                 this.selectedIndex = projectShortcutIndex
 
-                translateThumbnails(this.selectedIndex)
+                this.translateThumbnails(this.selectedIndex)
             })
 
             shortcut.addEventListener("click", () => {
@@ -137,6 +124,25 @@ class RecentProjects {
 
         window.addEventListener("resize", () => {
             translateThumbnails(this.selectedIndex)
+        })
+    }
+
+    /**
+     * Translates and rotates thumbnails based on the selected index.
+     * Adjusts the transform property of each thumbnail to position it correctly.
+     * @param {number} selectedIndex - The index of the currently selected thumbnail.
+     * @private
+     */
+    translateThumbnails(selectedIndex) {
+        let translateY = this.calculateTranslateY(selectedIndex)
+        this.thumbnails.forEach((thumbnail, thumbnailIndex) => {
+            if (thumbnailIndex < selectedIndex) {
+                thumbnail.style.transform = `rotate(-${RecentProjects.TRANSFORM_ROTATION}deg) translate(${RecentProjects.TRANSFORM_TRANSLATE_X}%, ${translateY}px)`
+            } else if (thumbnailIndex == selectedIndex) {
+                thumbnail.style.transform = `translateY(${translateY}px)`
+            } else {
+                thumbnail.style.transform = `rotate(${RecentProjects.TRANSFORM_ROTATION}deg) translate(${RecentProjects.TRANSFORM_TRANSLATE_X}%, ${translateY}px)`
+            }
         })
     }
 
