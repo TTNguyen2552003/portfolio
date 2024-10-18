@@ -75,10 +75,12 @@
 
             .about-the-fold__greeting {
                 font: var(--typography-desktop-title-hero);
-                background-image: linear-gradient(to right,
-                        var(--theme-gradient-1),
-                        var(--theme-gradient-2),
-                        var(--theme-gradient-3));
+                background-image: linear-gradient(
+                    to right,
+                    var(--theme-gradient-1),
+                    var(--theme-gradient-2),
+                    var(--theme-gradient-3)
+                );
                 background-clip: text;
                 color: transparent;
             }
@@ -150,10 +152,12 @@
             .projects-container {
                 box-sizing: border-box;
                 width: 100%;
+                height: 480px;
                 display: flex;
                 gap: var(--gap-positive-1200);
                 align-items: flex-start;
                 padding: var(--gap-positive-1200) var(--gap-positive-700) 0 var(--gap-positive-700);
+                overflow: hidden;
                 border-radius: var(--shape-large);
                 background-color: var(--theme-surface-tint-2);
                 box-shadow: var(--elevation-low);
@@ -172,6 +176,7 @@
 
             .project-thumbnail {
                 width: 480px;
+                transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
 
                 img {
                     width: 480px;
@@ -179,7 +184,15 @@
                 }
             }
 
-            .projects--short {
+            .project-shortcuts-and-projects-in-detailed {
+                position: relative;
+                display: flex;
+                width: 100%;
+                flex-direction: row-reverse;
+                gap: var(--gap-positive-1200);
+            }
+
+            .project-shortcuts {
                 box-sizing: border-box;
                 width: 100%;
                 display: flex;
@@ -190,44 +203,15 @@
                 border-radius: var(--shape-medium);
                 background: var(--theme-surface-tint-2);
                 box-shadow: var(--elevation-extra-low);
+                z-index: 1;
             }
 
-            .project--short {
-                box-sizing: border-box;
-                width: 100%;
+            .projects--detailed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                cursor: pointer;
-
-                .project--short__logo-and-name {
-                    box-sizing: border-box;
-                    display: flex;
-                    gap: var(--gap-positive-400);
-                    align-items: center;
-                }
-
-                .project--short__logo {
-                    width: var(--icon-size-small);
-                    height: var(--icon-size-small);
-                    object-fit: contain;
-                    box-shadow: var(--elevation-extra-low);
-                }
-
-                .project--short__name {
-                    font: var(--typography-desktop-label);
-                    color: var(--theme-on-surface-shade-2);
-                }
-
-                .project--short__expand-button {
-                    width: var(--icon-size-small);
-                    height: var(--icon-size-small);
-
-                    img {
-                        width: var(--icon-size-small);
-                        height: var(--icon-size-small);
-                    }
-                }
             }
         }
     }

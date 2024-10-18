@@ -1,0 +1,79 @@
+@media (min-width: 1025px) {
+    #about {
+        box-sizing: border-box;
+        max-width: 960px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-700);
+        align-items: center;
+
+        .section__title {
+            font: var(--typography-desktop-title-page);
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .about-section__introduction-cards {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            gap: var(--gap-positive-400);
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-600);
+        align-items: flex-start;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .section__title {
+            margin: auto;
+            font: var(--typography-tablet-title-page);
+            text-align: center;
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .about-section__introduction-cards {
+            display: flex;
+            gap: var(--gap-positive-1200);
+            padding: var(--gap-positive-1200);
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    #about {
+        box-sizing: border-box;
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-600);
+        align-items: center;
+        padding: 0 var(--gap-positive-400);
+
+        .section__title {
+            font: var(--typography-mobile-title-page);
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .about-section__introduction-cards {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-600);
+            align-items: flex-start;
+        }
+    }
+}

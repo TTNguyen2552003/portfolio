@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     box-sizing: border-box;
     width: 100%;
@@ -14,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--theme-surface);
+    overflow-x: hidden;
 }
 
 a {
@@ -28,4 +33,46 @@ button {
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding-top: var(--gap-positive-4000);
+        gap: var(--gap-positive-2400);
+    }
+
+    main {
+        gap: var(--gap-positive-2400);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    body {
+        padding-top: var(--gap-positive-2400);
+        gap: var(--gap-positive-1600);
+    }
+
+    main {
+        gap: var(--gap-positive-1600);
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-top: var(--gap-positive-2400);
+        gap: var(--gap-positive-1200);
+    }
+
+    main {
+        gap: var(--gap-positive-1600);
+    }
 }

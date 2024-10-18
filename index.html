@@ -37,30 +37,71 @@
         />
         <link
             rel="stylesheet"
-            href="./components/header.css"
+            href="./styles/components/navigation-bar-item.css"
         />
         <link
             rel="stylesheet"
-            href="./components/navigation-bar.css"
+            href="./styles/components/header.css"
         />
         <link
             rel="stylesheet"
-            href="./styles/platforms/desktop.css"
+            href="./styles/components/about-the-fold-section.css"
         />
         <link
             rel="stylesheet"
-            href="./components/social-media-item.css"
+            href="./styles/components/social-media-item.css"
         />
         <link
             rel="stylesheet"
-            href="./components/introduction-card.css"
+            href="./styles/components/social-media.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/introduction-card.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/about-section.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/project-shortcut.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/project-shortcut.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/project-shortcuts.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/project-thumbnails.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/projects-container.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/project-in-detailed.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/recent-projects-section.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/footer.css"
         />
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="./scripts/avatar-frame.js"></script>
         <script src="./scripts/about-the-fold-background.js"></script>
         <script src="./scripts/magnetic-hover.js"></script>
         <script src="./scripts/animated-android-logo-border-frame.js"></script>
-        <script src="./scripts/header-interaction.js"></script>
+        <script src="./scripts/header.js"></script>
+        <script src="./scripts/recent-projects.js"></script>
     </head>
     <body>
         <header class="header">
@@ -75,9 +116,9 @@
                     class="header__logo"
                 />
             </a>
-            <nav class="navigation-bar">
+            <nav class="header__navigation-bar">
                 <ul class="navigation-bar__items">
-                    <li class="navigation-bar__item">
+                    <li class="navigation-bar-item">
                         <a
                             href="#about-the-fold"
                             magnetic-hover
@@ -85,7 +126,7 @@
                             >Home</a
                         >
                     </li>
-                    <li class="navigation-bar__item">
+                    <li class="navigation-bar-item">
                         <a
                             href="#about"
                             magnetic-hover
@@ -93,7 +134,7 @@
                             >About</a
                         >
                     </li>
-                    <li class="navigation-bar__item">
+                    <li class="navigation-bar-item">
                         <a
                             href="#recent-projects"
                             magnetic-hover
@@ -101,7 +142,7 @@
                             >Projects</a
                         >
                     </li>
-                    <li class="navigation-bar__item">
+                    <li class="navigation-bar-item">
                         <a
                             href="#footer"
                             magnetic-hover
@@ -114,7 +155,7 @@
             <button
                 magnetic-hover
                 type="button"
-                class="header__open-drawer-menu"
+                class="header__open-drawer-menu-button"
             >
                 <img
                     src="./assets/images/menu-icon.svg"
@@ -150,8 +191,13 @@
                 </div>
             </section>
             <ul class="social-media">
-                <li magnetic-hover class="social-media-item">
+                <li
+                    magnetic-hover
+                    class="social-media-item"
+                >
                     <a
+                        rel="noopener"
+                        target="_blank"
                         href="https://www.linkedin.com/in/ttnguyen2552003"
                         class="social-media-item__link"
                     >
@@ -163,8 +209,13 @@
                         <div class="social-media-item__label">Linkedin</div>
                     </a>
                 </li>
-                <li magnetic-hover class="social-media-item">
+                <li
+                    magnetic-hover
+                    class="social-media-item"
+                >
                     <a
+                        rel="noopener"
+                        target="_blank"
                         href="https://github.com/TTNguyen2552003"
                         class="social-media-item__link"
                     >
@@ -176,8 +227,13 @@
                         <div class="social-media-item__label">Github</div>
                     </a>
                 </li>
-                <li magnetic-hover class="social-media-item">
+                <li
+                    magnetic-hover
+                    class="social-media-item"
+                >
                     <a
+                        rel="noopener"
+                        target="_blank"
                         href="https://www.behance.net/ttnguyen2552003"
                         class="social-media-item__link"
                     >
@@ -195,71 +251,74 @@
                 class="about-section"
             >
                 <div class="section__title">About me</div>
-                <ul class="about-section__introduction-cards">
-                    <li class="introduction-card">
-                        <img
-                            src="./assets/images/development-figure.webp"
-                            alt="image"
-                            class="introduction-card__figure"
-                        />
-                        <div class="introduction-card__text-container">
-                            <div class="introduction-card__title">Development</div>
-                            <div class="introduction-card__body">
-                                Kotlin serves as my inaugural programming language, and my passion for it runs deep. I
-                                frequently utilize Compose along with built-in libraries to craft intuitive
-                                applications.
-                            </div>
-                        </div>
-                        <div class="introduction-card__resume-link">
+                <div class="about-section__introduction-cards-container">
+                    <ul class="about-section__introduction-cards">
+                        <li class="introduction-card">
                             <img
-                                src="./assets/images/resume-icon.svg"
-                                alt="resume icon"
-                                class="resume-link__icon"
+                                src="./assets/images/development-figure.webp"
+                                alt="image"
+                                class="introduction-card__figure"
                             />
-                            <div class="resume-link__label">Resume</div>
-                        </div>
-                    </li>
-                    <li class="introduction-card">
-                        <img
-                            src="./assets/images/about-me-figure.webp"
-                            alt="image"
-                            class="introduction-card__figure"
-                        />
-                        <div class="introduction-card__text-container">
-                            <div class="introduction-card__title">About me</div>
-                            <div class="introduction-card__body">
-                                I am a 21-year-old aspiring professional from Vietnam, with a burgeoning passion for
-                                Android app development and UX design. Having dedicated a year to mastering these
-                                disciplines, I find myself deeply enamored with the creative and technical challenges
-                                they present. My ambition is to forge a career path as a UX designer or Android
-                                developer, leveraging my skills to craft intuitive and impactful digital experiences.
+                            <div class="introduction-card__text-container">
+                                <div class="introduction-card__title">Development</div>
+                                <div class="introduction-card__body">
+                                    Kotlin serves as my inaugural programming language, and my passion for it runs deep.
+                                    I frequently utilize Compose along with built-in libraries to craft intuitive
+                                    applications.
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="introduction-card">
-                        <img
-                            src="./assets/images/design-figure.webp"
-                            alt="image"
-                            class="introduction-card__figure"
-                        />
-                        <div class="introduction-card__text-container">
-                            <div class="introduction-card__title">Design</div>
-                            <div class="introduction-card__body">
-                                I consistently leverage the Design Thinking Process to analyze and address challenges in
-                                my case studies. My affinity for micro-interactions and animations adds depth and
-                                dynamism to my solutions.
+                            <div class="introduction-card__resume-link">
+                                <img
+                                    src="./assets/images/resume-icon.svg"
+                                    alt="resume icon"
+                                    class="resume-link__icon"
+                                />
+                                <div class="resume-link__label">Resume</div>
                             </div>
-                        </div>
-                        <div class="introduction-card__resume-link">
+                        </li>
+                        <li class="introduction-card">
                             <img
-                                src="./assets/images/resume-icon.svg"
-                                alt="resume icon"
-                                class="resume-link__icon"
+                                src="./assets/images/about-me-figure.webp"
+                                alt="image"
+                                class="introduction-card__figure"
                             />
-                            <div class="resume-link__label">Resume</div>
-                        </div>
-                    </li>
-                </ul>
+                            <div class="introduction-card__text-container">
+                                <div class="introduction-card__title">About me</div>
+                                <div class="introduction-card__body">
+                                    I am a 21-year-old aspiring professional from Vietnam, with a burgeoning passion for
+                                    Android app development and UX design. Having dedicated a year to mastering these
+                                    disciplines, I find myself deeply enamored with the creative and technical
+                                    challenges they present. My ambition is to forge a career path as a UX designer or
+                                    Android developer, leveraging my skills to craft intuitive and impactful digital
+                                    experiences.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="introduction-card">
+                            <img
+                                src="./assets/images/design-figure.webp"
+                                alt="image"
+                                class="introduction-card__figure"
+                            />
+                            <div class="introduction-card__text-container">
+                                <div class="introduction-card__title">Design</div>
+                                <div class="introduction-card__body">
+                                    I consistently leverage the Design Thinking Process to analyze and address
+                                    challenges in my case studies. My affinity for micro-interactions and animations
+                                    adds depth and dynamism to my solutions.
+                                </div>
+                            </div>
+                            <div class="introduction-card__resume-link">
+                                <img
+                                    src="./assets/images/resume-icon.svg"
+                                    alt="resume icon"
+                                    class="resume-link__icon"
+                                />
+                                <div class="resume-link__label">Resume</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="recent-projects">
                 <div class="section__title">Recent projects</div>
@@ -267,83 +326,189 @@
                     <ul class="project-thumbnails">
                         <li class="project-thumbnail">
                             <img
-                                src=""
-                                alt=""
+                                src="./assets/images/unscramble-thumbnail.webp"
+                                alt="thumbnail"
                             />
                         </li>
                         <li class="project-thumbnail">
                             <img
-                                src=""
-                                alt=""
+                                src="./assets/images/qr-quicker-thumbnail.webp"
+                                alt="thumbnail"
                             />
                         </li>
                         <li class="project-thumbnail">
                             <img
-                                src=""
-                                alt=""
+                                src="./assets/images/calculator-thumbnail.webp"
+                                alt="thumbnail"
                             />
                         </li>
                     </ul>
-                    <ul class="projects--short">
-                        <li class="project--short">
-                            <div class="project--short__logo-and-name">
+                    <ul class="project-shortcuts">
+                        <li class="project-shortcut">
+                            <div class="project-shortcut__logo-and-name">
                                 <img
-                                    src="./assets/images/project-logo-unscramble.png"
+                                    src="./assets/images/project-logo-unscramble.svg"
                                     alt="project logo"
-                                    class="project--short__logo"
+                                    class="project-shortcut__logo"
                                 />
-                                <div class="project--short__name">Unscramble</div>
+                                <div class="project-shortcut__name">Unscramble</div>
                             </div>
-                            <button
-                                type="button"
-                                class="project--short__expand-button"
-                            >
-                                <img
-                                    src="./assets/images/arrow-icon.svg"
-                                    alt="arrow icon"
-                                    class="expand-button__arrow-icon"
-                                />
-                            </button>
+                            <img
+                                src="./assets/images/arrow-icon.svg"
+                                alt="arrow icon"
+                                class="project-shortcut__expand-icon"
+                            />
                         </li>
-                        <li class="project--short">
-                            <div class="project--short__logo-and-name">
+                        <li class="project-shortcut">
+                            <div class="project-shortcut__logo-and-name">
                                 <img
-                                    src="./assets/images/project-logo-qr-quicker.png"
+                                    src="./assets/images/project-logo-qr-quicker.svg"
                                     alt="project logo"
-                                    class="project--short__logo"
+                                    class="project-shortcut__logo"
                                 />
-                                <div class="project--short__name">QR Quicker</div>
+                                <div class="project-shortcut__name">QR Quicker</div>
                             </div>
-                            <button
-                                type="button"
-                                class="project--short__expand-button"
-                            >
-                                <img
-                                    src="./assets/images/arrow-icon.svg"
-                                    alt="arrow icon"
-                                    class="expand-button__arrow-icon"
-                                />
-                            </button>
+                            <img
+                                src="./assets/images/arrow-icon.svg"
+                                alt="arrow icon"
+                                class="project-shortcut__expand-icon"
+                            />
                         </li>
-                        <li class="project--short">
-                            <div class="project--short__logo-and-name">
+                        <li class="project-shortcut">
+                            <div class="project-shortcut__logo-and-name">
                                 <img
-                                    src="./assets/images/project-logo-calculator.png"
+                                    src="./assets/images/project-logo-calculator.svg"
                                     alt="project logo"
-                                    class="project--short__logo"
+                                    class="project-shortcut__logo"
                                 />
-                                <div class="project--short__name">Calculator</div>
+                                <div class="project-shortcut__name">Calculator</div>
                             </div>
-                            <button
-                                type="button"
-                                class="project--short__expand-button"
-                            >
-                                <img
-                                    src="./assets/images/arrow-icon.svg"
-                                    alt="arrow icon"
-                                    class="expand-button__arrow-icon"
-                                />
-                            </button>
+                            <img
+                                src="./assets/images/arrow-icon.svg"
+                                alt="arrow icon"
+                                class="project-shortcut__expand-icon"
+                            />
+                        </li>
+                    </ul>
+                    <ul class="projects--detailed projects--detailed--hidden">
+                        <li class="project--detailed project--detailed--hidden">
+                            <div class="project--detailed__text-container">
+                                <div class="project--detailed__logo-and-name">
+                                    <img
+                                        src="./assets/images/project-logo-unscramble.svg"
+                                        alt="project logo"
+                                        class="project--detailed__logo"
+                                    />
+                                    <div class="project--detailed__name">Unscramble</div>
+                                </div>
+                                <ul class="project--detailed__category-tags">
+                                    <li class="project--detailed__category-tag">Android app</li>
+                                    <li class="project--detailed__category-tag">UI design</li>
+                                </ul>
+                                <div class="project--detailed__overview">
+                                    Unscramble is a fun and challenging word game built with Kotlin for Android. Test
+                                    your vocabulary and unscrambling skills as you try to decipher the jumbled words and
+                                    form meaningful ones. It's a great way to enhance your language abilities while
+                                    enjoying a playful gaming experience.
+                                </div>
+                            </div>
+                            <div class="project--detailed__actions">
+                                <button
+                                    magnetic-hover
+                                    type="button"
+                                    class="project--detailed__back-button"
+                                >
+                                    Back
+                                </button>
+                                <a
+                                    rel="noopener"
+                                    target="_blank"
+                                    magnetic-hover
+                                    href="https://www.google.com"
+                                    class="project--detailed__explore-button"
+                                >
+                                    Explore
+                                </a>
+                            </div>
+                        </li>
+                        <li class="project--detailed project--detailed--hidden">
+                            <div class="project--detailed__text-container">
+                                <div class="project--detailed__logo-and-name">
+                                    <img
+                                        src="./assets/images/project-logo-qr-quicker.svg"
+                                        alt="project logo"
+                                        class="project--detailed__logo"
+                                    />
+                                    <div class="project--detailed__name">QR Quicker</div>
+                                </div>
+                                <ul class="project--detailed__category-tags">
+                                    <li class="project--detailed__category-tag">Android app</li>
+                                    <li class="project--detailed__category-tag">UI Design</li>
+                                </ul>
+                                <div class="project--detailed__overview">
+                                    QR Quicker is a versatile Android app that simplifies the process of scanning and
+                                    generating QR codes. Leveraging the power of Jetpack Compose, the app provides a
+                                    seamless and efficient user interface for quickly reading and creating QR codes.
+                                </div>
+                            </div>
+                            <div class="project--detailed__actions">
+                                <button
+                                    magnetic-hover
+                                    type="button"
+                                    class="project--detailed__back-button"
+                                >
+                                    Back
+                                </button>
+                                <a
+                                    rel="noopener"
+                                    target="_blank"
+                                    magnetic-hover
+                                    href="https://www.google.com"
+                                    class="project--detailed__explore-button"
+                                >
+                                    Explore
+                                </a>
+                            </div>
+                        </li>
+                        <li class="project--detailed project--detailed--hidden">
+                            <div class="project--detailed__text-container">
+                                <div class="project--detailed__logo-and-name">
+                                    <img
+                                        src="./assets/images/project-logo-calculator.svg"
+                                        alt="project logo"
+                                        class="project--detailed__logo"
+                                    />
+                                    <div class="project--detailed__name">Calculator</div>
+                                </div>
+                                <ul class="project--detailed__category-tags">
+                                    <li class="project--detailed__category-tag">Android app</li>
+                                    <li class="project--detailed__category-tag">QR Quicker</li>
+                                </ul>
+                                <div class="project--detailed__overview">
+                                    The Calculator app is a straightforward Android application developed using the
+                                    Kotlin programming language. Designed to perform basic mathematical operations on
+                                    both integers and real numbers, the app provides a user-friendly interface for easy
+                                    input and output.
+                                </div>
+                            </div>
+                            <div class="project--detailed__actions">
+                                <button
+                                    magnetic-hover
+                                    type="button"
+                                    class="project--detailed__back-button"
+                                >
+                                    Back
+                                </button>
+                                <a
+                                    rel="noopener"
+                                    target="_blank"
+                                    magnetic-hover
+                                    href="https://www.google.com"
+                                    class="project--detailed__explore-button"
+                                >
+                                    Explore
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -357,8 +522,13 @@
             <div class="footer__join-request">
                 <div class="join-request__title">Let me join your team</div>
                 <ul class="join-request__contacts">
-                    <li magnetic-hover class="social-media-item">
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
                         <a
+                            rel="noopener"
+                            target="_blank"
                             href="mailto:trantrongnguyen2552003@gmail.com"
                             class="social-media-item__link"
                         >
@@ -370,8 +540,13 @@
                             <div class="social-media-item__label">Gmail</div>
                         </a>
                     </li>
-                    <li magnetic-hover class="social-media-item">
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
                         <a
+                            rel="noopener"
+                            target="_blank"
                             href="https://t.me/TTNguyen2552003"
                             class="social-media-item__link"
                         >
@@ -383,8 +558,13 @@
                             <div class="social-media-item__label">Telegram</div>
                         </a>
                     </li>
-                    <li magnetic-hover class="social-media-item">
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
                         <a
+                            rel="noopener"
+                            target="_blank"
                             href="https://wa.link/am9f4t"
                             class="social-media-item__link"
                         >
@@ -441,48 +621,6 @@
                         transform="translate(-0.072018 -351.596832)"
                         fill="#4faf53"
                     />
-                    <g
-                        transform="translate(164.571 256)scale(.91429)"
-                        opacity=".7"
-                    >
-                        <path
-                            d="M100.296 3.591h1.861v8.057h-1.861zm.938-1.328q-.506 0-.849-.317-.342-.331-.342-.814c0-.483.114-.589.342-.8q.343-.332.849-.332c.506 0 .62.106.849.317a.98.98 0 0 1 .342.77q0 .497-.342.844-.328.332-.85.332m17.508 4.768v4.617h-1.862V7.272q0-1.056-.49-1.584-.492-.543-1.4-.543-1.028 0-1.623.633-.596.619-.596 1.796v4.074h-1.86V.452h1.86v4.074a2.96 2.96 0 0 1 1.132-.754 4.1 4.1 0 0 1 1.518-.272q1.504 0 2.412.89.909.891.909 2.64m-11.15 4.724q-1.31 0-2.025-.694-.714-.695-.714-2.022V5.161h-1.31V3.653h1.31V1.812h1.86v1.84h2.13v1.51h-2.13v3.832q0 .588.284.905.282.302.819.302.625 0 1.042-.332l.52 1.343a2.2 2.2 0 0 1-.803.407q-.462.135-.983.136m-13.295-.106-2.055-5.552-2.085 5.552H88.37l-2.918-8.057h1.757l2.099 5.945 2.188-5.945h1.564l2.144 5.975 2.159-5.975h1.652l-2.933 8.057zM80.712 7.664q0 .196-.03.558h-6.238q.164.891.848 1.419.7.513 1.727.513 1.31 0 2.16-.876l.997 1.162q-.536.65-1.355.981c-.82.331-1.161.332-1.846.332q-1.31 0-2.308-.528a3.84 3.84 0 0 1-1.548-1.464q-.537-.95-.537-2.142 0-1.177.522-2.113.535-.95 1.474-1.478c.939-.528 1.33-.528 2.114-.528q1.161 0 2.07.528A3.54 3.54 0 0 1 80.19 5.49q.52.936.52 2.173m-4.02-2.655q-.894 0-1.519.543-.61.528-.744 1.418h4.511q-.12-.875-.73-1.418t-1.518-.543m-7.676 6.639v-1.041q-.461.572-1.146.86a3.75 3.75 0 0 1-1.489.286q-1.146 0-2.07-.513a3.7 3.7 0 0 1-1.429-1.448q-.52-.95-.52-2.173c0-1.223.173-1.534.52-2.158a3.7 3.7 0 0 1 1.43-1.448q.923-.513 2.07-.513.788 0 1.443.272c.655.272.81.452 1.117.814V.452h1.861v11.196zm-.357-2.701q.313-.573.313-1.328c0-.755-.105-.945-.313-1.328a2.17 2.17 0 0 0-.848-.875 2.3 2.3 0 0 0-1.207-.317q-.669 0-1.206.317-.536.302-.848.875c-.312.573-.313.825-.313 1.328s.104.946.313 1.328.491.679.848.89q.537.302 1.206.302.67 0 1.206-.302.536-.317.85-.89M56.937 3.5q1.757 0 2.68.86.938.845.938 2.565v4.722h-1.757v-.98a2.2 2.2 0 0 1-.983.814q-.626.272-1.518.272c-.892 0-1.117-.1-1.564-.302a2.55 2.55 0 0 1-1.042-.86 2.27 2.27 0 0 1-.357-1.252q0-1.087.789-1.735.804-.664 2.516-.664h2.055v-.12q0-.846-.507-1.298-.49-.453-1.473-.453-.67 0-1.325.211-.641.211-1.087.589l-.73-1.373q.625-.483 1.504-.74c.879-.257 1.206-.256 1.861-.256m-.253 6.88q.699 0 1.236-.317.55-.332.774-.935v-.936h-1.921q-1.608 0-1.608 1.071 0 .513.402.815c.402.302.64.302 1.117.302m-10.691.06h-.864l-3.424-5.703v6.91h-1.847V1.087h1.594l4.139 7 4.064-7h1.593l.015 10.562h-1.831l-.015-7.001zm63.34 18.9v15.15h-3.371v-1.962a5.5 5.5 0 0 1-2.172 1.617 7.4 7.4 0 0 1-2.853.54 8.04 8.04 0 0 1-3.957-.963 6.86 6.86 0 0 1-2.7-2.7 9 9 0 0 1 0-8.16 6.9 6.9 0 0 1 2.7-2.7 8.1 8.1 0 0 1 3.957-.963 7 7 0 0 1 2.7.513c.817.335 1.55.847 2.145 1.5v-.762a1.08 1.08 0 0 1 1.08-1.08zm-4.766 11.01a5.26 5.26 0 0 0 0-6.87 4.64 4.64 0 0 0-6.46 0 5.3 5.3 0 0 0 0 6.87 4.3 4.3 0 0 0 3.223 1.308 4.34 4.34 0 0 0 3.237-1.302zm17.94 3.324a4.2 4.2 0 0 1-1.524.762 7 7 0 0 1-1.887.255 5.36 5.36 0 0 1-3.864-1.308 5.02 5.02 0 0 1-1.35-3.804v-13.59h2.469a1.08 1.08 0 0 1 1.08 1.08v2.379h4.047V32.3h-4.047v7.2a2.36 2.36 0 0 0 .552 1.692c.406.41.968.628 1.545.597q.34.001.675-.054c.81-.17 1.625.261 1.94 1.026zm5.079.027a7.24 7.24 0 0 1-2.88-2.766 8.28 8.28 0 0 1 0-8.016 7.3 7.3 0 0 1 2.88-2.751 9.2 9.2 0 0 1 8.319 0 7.3 7.3 0 0 1 2.88 2.75 8.28 8.28 0 0 1 0 8.017 7.24 7.24 0 0 1-2.88 2.766 9.2 9.2 0 0 1-8.32 0m7.392-3.37a5.26 5.26 0 0 0 0-6.87 4.64 4.64 0 0 0-6.46 0 5.3 5.3 0 0 0 0 6.87 4.3 4.3 0 0 0 3.223 1.309 4.34 4.34 0 0 0 3.237-1.281zM152 29.172v3.373a4.5 4.5 0 0 0-.822-.087 4.3 4.3 0 0 0-3.222 1.2 4.8 4.8 0 0 0-1.167 3.48v7.353h-3.552V29.34h2.298a1.08 1.08 0 0 1 1.08 1.08v1.134q1.521-2.382 5.385-2.382M44.978 44.215c-1-.245-1.95-.658-2.811-1.221l.62-1.233a1.605 1.605 0 0 1 2.023-.768q.561.232 1.146.399a10.2 10.2 0 0 0 2.826.41q3.177 0 3.183-1.67a1.12 1.12 0 0 0-.81-1.107 14 14 0 0 0-2.595-.6 21 21 0 0 1-3.054-.675 4.7 4.7 0 0 1-2.022-1.296 3.6 3.6 0 0 1-.864-2.568 4.05 4.05 0 0 1 1.8-3.453 8.2 8.2 0 0 1 4.869-1.296c1.054 0 2.104.119 3.132.354a8.8 8.8 0 0 1 2.568.978l-.675 1.296a1.605 1.605 0 0 1-1.983.795 8.8 8.8 0 0 0-3.075-.534 4.8 4.8 0 0 0-2.373.47 1.4 1.4 0 0 0-.81 1.234c-.01.547.341 1.036.864 1.2.874.316 1.78.542 2.7.675 1.008.151 2.004.377 2.979.675.77.234 1.467.664 2.022 1.248.596.692.896 1.59.837 2.502.02 1.38-.68 2.67-1.848 3.405a8.7 8.7 0 0 1-5.022 1.28 13.6 13.6 0 0 1-3.627-.5M89.86 29.34v12.858q0 8.004-8.172 8.004a15.2 15.2 0 0 1-4.146-.552 8.8 8.8 0 0 1-3.237-1.605l1.026-1.713a1.053 1.053 0 0 1 1.446-.342 8.7 8.7 0 0 0 1.632.714 9.9 9.9 0 0 0 3.084.486q2.496 0 3.66-1.134a4.65 4.65 0 0 0 1.167-3.465v-.795a5.84 5.84 0 0 1-2.211 1.5 7.8 7.8 0 0 1-2.865.513 8.2 8.2 0 0 1-3.9-.924 6.9 6.9 0 0 1-2.757-2.595 7.3 7.3 0 0 1-1.005-3.831 7.2 7.2 0 0 1 1.005-3.816 6.86 6.86 0 0 1 2.75-2.568 8.3 8.3 0 0 1 3.9-.9 8 8 0 0 1 3 .54c.882.345 1.66.911 2.26 1.644v-.936a1.08 1.08 0 0 1 1.08-1.08zm-4.782 10.263a4.1 4.1 0 0 0 1.299-3.135 4.05 4.05 0 0 0-1.296-3.096 5.226 5.226 0 0 0-6.642 0 4.05 4.05 0 0 0-1.287 3.096 4.1 4.1 0 0 0 1.287 3.135 5.18 5.18 0 0 0 6.639 0M73.022 29.325 67.13 43.068a2.35 2.35 0 0 1-2.151 1.422h-1.902l5.763-13.404.3-.675a1.78 1.78 0 0 1 1.638-1.071zM62.237 42.588l-5.89-13.236h2.512a1.78 1.78 0 0 1 1.644 1.092l3.492 8.046z"
-                            clip-rule="evenodd"
-                            fill="#fff"
-                            fill-rule="evenodd"
-                        />
-                        <g
-                            transform="matrix(.3 0 0 .3 -18.122 -25.906)"
-                            mask="url(#e8mvuNLHUdk8)"
-                        >
-                            <path
-                                d="M129.5 243.584c-8.76 2.18-20.08 1.79-37.33-19.63-2.358-2.928-4.382-6.363-5.934-10.028a30.8 30.8 0 0 0 9.554 1.508c17.032 0 30.84-13.807 30.84-30.84a30.7 30.7 0 0 0-3.854-14.94c22.541-3.147 48.247-1.186 56.014 6.2 12.32 11.73-14.11 59.03-49.29 67.73"
-                                fill="#fff"
-                            />
-                            <mask
-                                id="e8mvuNLHUdk8"
-                                mask-type="alpha"
-                                x="-150%"
-                                y="-150%"
-                                height="400%"
-                                width="400%"
-                            >
-                                <path
-                                    id="e8mvuNLHUdk9"
-                                    d="M78.375 207.04c0-31.46 25.503-56.964 56.963-56.964s56.963 25.503 56.963 56.963-25.503 56.964-56.963 56.964-56.963-25.504-56.963-56.964m89.235-4.716a1.74 1.74 0 0 0-2-1.41h-.06a9.88 9.88 0 0 1-9-16.37 1.76 1.76 0 0 0 0-2.49l-.11-.1a31.5 31.5 0 0 0-9.11-5.45 1.76 1.76 0 0 0-2.29 1v.06a9.88 9.88 0 0 1-18.7-.18 1.76 1.76 0 0 0-2.2-1.18h-.11a32.6 32.6 0 0 0-9.03 5.12 1.76 1.76 0 0 0-.34 2.47l.1.12a9.88 9.88 0 0 1-9.57 16 1.76 1.76 0 0 0-2.11 1.33v.09a32.6 32.6 0 0 0 0 10.38 1.76 1.76 0 0 0 2 1.5h.11a9.88 9.88 0 0 1 9 16.37 1.76 1.76 0 0 0 0 2.49l.11.1a31.5 31.5 0 0 0 9.11 5.42 1.76 1.76 0 0 0 2.29-1v-.06a9.88 9.88 0 0 1 18.68.16 1.76 1.76 0 0 0 2.2 1.18h.11a32.6 32.6 0 0 0 9.13-5.19 1.76 1.76 0 0 0 .31-2.48l-.1-.12a9.88 9.88 0 0 1 9.47-16.21 1.74 1.74 0 0 0 2.11-1.26v-.09a32.6 32.6 0 0 0 0-10.2m-41.67 4.69a9.41 9.41 0 1 1 18.82 0 9.41 9.41 0 0 1-18.82 0"
-                                    fill="#d2dbed"
-                                    stroke-width="0"
-                                    transform="matrix(-0.956186 -0.29276 0.29276 -0.956186 204.133166 444.628774)"
-                                />
-                            </mask>
-                        </g>
-                        <path
-                            id="e8mvuNLHUdk10"
-                            d="m116.33 114.77-3.64-2.18a3.31 3.31 0 0 1-1.65-2.87v-2a3.31 3.31 0 0 1 1.65-2.87l3.64-2.18a3.31 3.31 0 0 0 1.23-4.52l-1.74-3a3.31 3.31 0 0 0-4.53-1.15l-3.68 2.18a3.31 3.31 0 0 1-3.31 0l-1.7-1a3.31 3.31 0 0 1-1.65-2.87v-4.38a3.31 3.31 0 0 0-3.31-3.31h-3.47a3.31 3.31 0 0 0-3.31 3.31v4.44a3.31 3.31 0 0 1-1.65 2.87l-1.68 1a3.31 3.31 0 0 1-3.31 0L80.56 94A3.31 3.31 0 0 0 76 95.24l-1.74 3a3.31 3.31 0 0 0 1.19 4.53L79.1 105a3.31 3.31 0 0 1 1.65 2.87v2a3.31 3.31 0 0 1-1.65 2.87l-3.61 2.18a3.31 3.31 0 0 0-1.2 4.52l1.74 3a3.31 3.31 0 0 0 4.52 1.2l3.66-2.18a3.31 3.31 0 0 1 3.31 0l1.68 1a3.31 3.31 0 0 1 1.65 2.87V129a3.31 3.31 0 0 0 3.31 3.31h3.46a3.31 3.31 0 0 0 3.31-3.31v-3.77a3.31 3.31 0 0 1 1.65-2.87l1.7-1a3.31 3.31 0 0 1 3.31 0l3.66 2.18a3.31 3.31 0 0 0 4.52-1.21l1.74-3a3.31 3.31 0 0 0-1.14-4.54Zm-20.49.91a7 7 0 1 1 7-7 7 7 0 0 1-7 7"
-                            transform="matrix(-0.286856 0.087828 -0.087828 -0.286856 48.156535 52.59087)"
-                            fill="#fff"
-                        />
-                    </g>
                     <script
                         xlink:href="https://cdn.svgator.com/ply/5c7f360c.js?v=2024-09-05"
                         src="https://cdn.svgator.com/ply/5c7f360c.js?v=2024-09-05"

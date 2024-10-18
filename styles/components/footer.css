@@ -1,0 +1,222 @@
+@keyframes spin {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-1600);
+        align-items: center;
+        padding: var(--gap-positive-700) 0;
+        background-color: var(--theme-surface-shade-1);
+
+        .footer__join-request {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-1200);
+            align-items: center;
+
+            .join-request__title {
+                font: var(--typography-desktop-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .join-request__contacts {
+                display: flex;
+                gap: var(--gap-positive-1600);
+                align-items: center;
+            }
+        }
+
+        .footer__animated-android-logo {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+            border-radius: var(--shape-full);
+
+            .animated-android-logo__border-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 320px;
+                height: 320px;
+                z-index: 1;
+                animation: spin 10s linear infinite;
+            }
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 320px;
+                height: 320px;
+                z-index: 0;
+            }
+        }
+
+        .footer__android-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 320px;
+            z-index: 0;
+        }
+
+        .footer__copyright {
+            font: var(--typography-desktop-supporting-text);
+            color: var(--theme-on-surface-tint-1);
+        }
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-1600);
+        align-items: center;
+        padding: var(--gap-positive-700) 0;
+        background-color: var(--theme-surface-shade-1);
+
+        .footer__join-request {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-700);
+            align-items: center;
+
+            .join-request__title {
+                font: var(--typography-tablet-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .join-request__contacts {
+                display: flex;
+                gap: var(--gap-positive-1200);
+                align-items: center;
+            }
+        }
+
+        .footer__animated-android-logo {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            overflow: hidden;
+            border-radius: var(--shape-full);
+
+            .animated-android-logo__border-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 280px;
+                height: 280px;
+                z-index: 1;
+                animation: spin 10s linear infinite;
+            }
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 280px;
+                height: 280px;
+                z-index: 0;
+            }
+        }
+
+        .footer__android-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 280px;
+            z-index: 0;
+        }
+
+        .footer__copyright {
+            font: var(--typography-tablet-supporting-text);
+            color: var(--theme-on-surface-tint-1);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-positive-1200);
+        align-items: center;
+        padding: var(--gap-positive-700) 0;
+        background-color: var(--theme-surface-shade-1);
+
+        .footer__join-request {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-positive-600);
+            align-items: center;
+
+            .join-request__title {
+                font: var(--typography-mobile-title-page);
+                color: var(--theme-on-surface-shade-2);
+            }
+
+            .join-request__contacts {
+                display: flex;
+                gap: var(--gap-positive-1200);
+                align-items: center;
+            }
+        }
+
+        .footer__animated-android-logo {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            overflow: hidden;
+            border-radius: var(--shape-full);
+
+            .animated-android-logo__border-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 240px;
+                height: 240px;
+                z-index: 1;
+                animation: spin 10s linear infinite;
+            }
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 240px;
+                height: 240px;
+                z-index: 0;
+            }
+        }
+
+        .footer__android-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 240px;
+            z-index: 0;
+        }
+
+        .footer__copyright {
+            font: var(--typography-mobile-supporting-text);
+            color: var(--theme-on-surface-tint-1);
+        }
+    }
+}

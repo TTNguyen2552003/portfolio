@@ -1,0 +1,99 @@
+@media (min-width: 1025px) {
+    .project-shortcut {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .project-shortcut__logo-and-name {
+            display: flex;
+            gap: var(--gap-positive-400);
+            align-items: center;
+        }
+
+        .project-shortcut__logo {
+            width: var(--icon-size-medium);
+            height: var(--icon-size-medium);
+            border-radius: var(--shape-small);
+            box-shadow: var(--elevation-extra-low);
+        }
+
+        .project-shortcut__name {
+            font: var(--typography-desktop-label);
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .project-shortcut__expand-icon {
+            width: var(--icon-size-medium);
+            height: var(--icon-size-medium);
+        }
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    .project-shortcut {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .project-shortcut__logo-and-name {
+            display: flex;
+            gap: var(--gap-positive-300);
+            align-items: center;
+        }
+
+        .project-shortcut__logo {
+            width: var(--icon-size-small);
+            height: var(--icon-size-small);
+            border-radius: var(--shape-small);
+            box-shadow: var(--elevation-extra-low);
+        }
+
+        .project-shortcut__name {
+            font: var(--typography-tablet-label);
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .project-shortcut__expand-icon {
+            width: var(--icon-size-extra-small);
+            height: var(--icon-size-extra-small);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .project-shortcut {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .project-shortcut__logo-and-name {
+            display: flex;
+            gap: var(--gap-positive-300);
+            align-items: center;
+        }
+
+        .project-shortcut__logo {
+            width: var(--icon-size-extra-small);
+            height: var(--icon-size-extra-small);
+            border-radius: var(--shape-extra-small);
+            box-shadow: var(--elevation-extra-low);
+        }
+
+        .project-shortcut__name {
+            font: var(--typography-mobile-label);
+            color: var(--theme-on-surface-shade-2);
+        }
+
+        .project-shortcut__expand-icon {
+            width: var(--icon-size-extra-small);
+            height: var(--icon-size-extra-small);
+        }
+    }
+}

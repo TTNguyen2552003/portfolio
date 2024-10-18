@@ -1,0 +1,23 @@
+@media (min-width: 1025px) {
+    .social-media {
+        display: flex;
+        gap: var(--gap-positive-1600);
+        align-items: center;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .social-media {
+        display: flex;
+        gap: var(--gap-positive-1200);
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .social-media {
+        display: flex;
+        gap: var(--gap-positive-1200);
+        align-items: center;
+    }
+}

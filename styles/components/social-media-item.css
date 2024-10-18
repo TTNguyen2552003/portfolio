@@ -21,19 +21,21 @@
 
 @media (min-width: 641px) and (max-width: 1024px) {
     .social-media-item {
-        display: flex;
-        gap: var(--gap-positive-400);
-        align-items: center;
-        justify-content: center;
+        .social-media-item__link {
+            display: flex;
+            gap: var(--gap-positive-400);
+            align-items: center;
+            justify-content: center;
 
-        .social-media-item__logo {
-            width: var(--icon-size-large);
-            height: var(--icon-size-large);
-        }
+            .social-media-item__logo {
+                width: var(--icon-size-large);
+                height: var(--icon-size-large);
+            }
 
-        .social-media-item__label {
-            font: var(--typography-tablet-heading);
-            color: var(--theme-on-surface-shade-2);
+            .social-media-item__label {
+                font: var(--typography-tablet-heading);
+                color: var(--theme-on-surface-shade-2);
+            }
         }
     }
 }

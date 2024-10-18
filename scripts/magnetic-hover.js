@@ -41,12 +41,13 @@ class MagneticHover {
      */
     setupEventListener() {
         this.elements.forEach((element, index) => {
+            element.addEventListener("mouseenter", () => {
+                this.boundingRects[index] = element.getBoundingClientRect()
+            })
+
             element.addEventListener("mousemove", (event) => {
                 const mousePosX = event.clientX - this.boundingRects[index].x
                 const mousePosY = event.clientY - this.boundingRects[index].y
-
-                console.log(mousePosX)
-                console.log(mousePosY)
 
                 gsap.to(element, {
                     x: (mousePosX - this.boundingRects[index].width / 2) * 0.4,
@@ -63,13 +64,6 @@ class MagneticHover {
                     duration: 0.8,
                     ease: "elastic.out(1, 0.3)"
                 })
-            })
-        })
-
-        window.addEventListener("scroll", () => {
-            this.boundingRects = []
-            this.elements.forEach((element) => {
-                this.boundingRects.push(element.getBoundingClientRect())
             })
         })
     }

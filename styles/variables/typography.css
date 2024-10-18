@@ -30,9 +30,9 @@
         var(--type-scale-tablet-line-height) var(--font-family-brand);
     --typography-tablet-label: var(--font-weight-semibold) var(--type-scale-tablet-root-size) /
         var(--type-scale-tablet-line-height) var(--font-family-brand);
-    --typography-tablet-body: var(--font-weight-regular) var(--type-scale-tablet-scale-up-root-size) /
+    --typography-tablet-body: var(--font-weight-regular) var(--type-scale-tablet-root-size) /
         var(--type-scale-tablet-line-height) var(--font-family-plain);
-    --typography-tablet-supporting-text: var(--font-weight-regular) var(--type-scale-tablet-scale-scale-down-1) /
+    --typography-tablet-supporting-text: var(--font-weight-regular) var(--type-scale-tablet-scale-down-1) /
         var(--type-scale-tablet-line-height) var(--font-family-plain);
 
     --typography-mobile-title-hero: var(--font-weight-bold) var(--type-scale-mobile-scale-up-5) /
@@ -47,8 +47,8 @@
         var(--type-scale-mobile-line-height) var(--font-family-brand);
     --typography-mobile-label: var(--font-weight-semibold) var(--type-scale-mobile-root-size) /
         var(--type-scale-mobile-line-height) var(--font-family-brand);
-    --typography-mobile-body: var(--font-weight-regular) var(--type-scale-mobile-scale-up-root-size) /
+    --typography-mobile-body: var(--font-weight-regular) var(--type-scale-mobile-root-size) /
         var(--type-scale-mobile-line-height) var(--font-family-plain);
-    --typography-mobile-supporting-text: var(--font-weight-regular) var(--type-scale-mobile-scale-scale-down-1) /
+    --typography-mobile-supporting-text: var(--font-weight-regular) var(--type-scale-mobile-scale-down-1) /
         var(--type-scale-mobile-line-height) var(--font-family-plain);
 }
