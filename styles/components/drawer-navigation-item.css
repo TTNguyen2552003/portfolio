@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+    .drawer-menu-navigation-item {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .drawer-menu-navigation-item {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .drawer-menu-navigation-item {
+        &:hover {
+            .drawer-menu-navigation-item__link {
+                color: var(--theme-on-surface-tint-2);
+            }
+        }
+
+        .drawer-menu-navigation-item__link {
+            font: var(--typography-mobile-title-hero);
+            color: var(--theme-on-surface-shade-2);
+            transition: color 300ms ease-out;
+        }
+    }
+}

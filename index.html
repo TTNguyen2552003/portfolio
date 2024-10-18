@@ -95,6 +95,14 @@
             rel="stylesheet"
             href="./styles/components/footer.css"
         />
+        <link
+            rel="stylesheet"
+            href="./styles/components/drawer-navigation-item.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/components/drawer-menu.css"
+        />
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="./scripts/avatar-frame.js"></script>
         <script src="./scripts/about-the-fold-background.js"></script>
@@ -102,8 +110,125 @@
         <script src="./scripts/animated-android-logo-border-frame.js"></script>
         <script src="./scripts/header.js"></script>
         <script src="./scripts/recent-projects.js"></script>
+        <script src="./scripts/drawer-menu.js"></script>
     </head>
     <body>
+        <div
+            class="drawer-menu drawer-menu--hidden"
+            id="drawer-menu"
+        >
+            <div class="drawer-menu__header">
+                <button
+                    magnetic-hover
+                    type="button"
+                    class="drawer-menu__close-button"
+                    aria-label="close drawer menu button"
+                >
+                    <img
+                        src="./assets/images/close-icon.svg"
+                        alt="close menu icon"
+                    />
+                </button>
+            </div>
+            <nav class="drawer-menu__navigation-component">
+                <div class="drawer-menu-navigation__title">NAVIGATION</div>
+                <div class="drawer-menu-navigation__divider"></div>
+                <ul class="drawer-menu-navigation__items">
+                    <li class="drawer-menu-navigation-item">
+                        <a
+                            href="#about-the-fold"
+                            class="drawer-menu-navigation-item__link"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="drawer-menu-navigation-item">
+                        <a
+                            href="#about"
+                            class="drawer-menu-navigation-item__link"
+                            >About</a
+                        >
+                    </li>
+                    <li class="drawer-menu-navigation-item">
+                        <a
+                            href="#recent-projects"
+                            class="drawer-menu-navigation-item__link"
+                            >Recent projects</a
+                        >
+                    </li>
+                    <li class="drawer-menu-navigation-item">
+                        <a
+                            href="#footer"
+                            class="drawer-menu-navigation-item__link"
+                            >Contacts</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <div class="drawer-menu__footer">
+                <div class="drawer-menu-footer__title">SOCIAL MEDIA</div>
+                <div class="drawer-menu-footer__divider"></div>
+                <ul class="social-media drawer-menu-footer__social-media">
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/ttnguyen2552003"
+                            class="social-media-item__link"
+                            aria-label="Linkedin"
+                        >
+                            <img
+                                src="./assets/images/linkedin-logo.svg"
+                                alt="Linkedin logo"
+                                class="social-media-item__logo"
+                            />
+                            <div class="social-media-item__label">Linkedin</div>
+                        </a>
+                    </li>
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            href="https://github.com/TTNguyen2552003"
+                            class="social-media-item__link"
+                            aria-label="GitHub"
+                        >
+                            <img
+                                src="./assets/images/github-logo.svg"
+                                alt="GitHub logo"
+                                class="social-media-item__logo"
+                            />
+                            <div class="social-media-item__label">GitHub</div>
+                        </a>
+                    </li>
+                    <li
+                        magnetic-hover
+                        class="social-media-item"
+                    >
+                        <a
+                            rel="noopener"
+                            target="_blank"
+                            href="https://www.behance.net/ttnguyen2552003"
+                            class="social-media-item__link"
+                            aria-label="Behance"
+                        >
+                            <img
+                                src="./assets/images/behance-logo.svg"
+                                alt="Behance logo"
+                                class="social-media-item__logo"
+                            />
+                            <div class="social-media-item__label">Behance</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <header class="header">
             <a
                 href="./index.html"
@@ -156,6 +281,7 @@
                 magnetic-hover
                 type="button"
                 class="header__open-drawer-menu-button"
+                arial-label="open drawer menu button"
             >
                 <img
                     src="./assets/images/menu-icon.svg"
@@ -200,6 +326,7 @@
                         target="_blank"
                         href="https://www.linkedin.com/in/ttnguyen2552003"
                         class="social-media-item__link"
+                        aria-label="Linkedin"
                     >
                         <img
                             src="./assets/images/linkedin-logo.svg"
@@ -218,13 +345,14 @@
                         target="_blank"
                         href="https://github.com/TTNguyen2552003"
                         class="social-media-item__link"
+                        aria-label="GitHub"
                     >
                         <img
                             src="./assets/images/github-logo.svg"
                             alt="GitHub logo"
                             class="social-media-item__logo"
                         />
-                        <div class="social-media-item__label">Github</div>
+                        <div class="social-media-item__label">GitHub</div>
                     </a>
                 </li>
                 <li
@@ -236,6 +364,7 @@
                         target="_blank"
                         href="https://www.behance.net/ttnguyen2552003"
                         class="social-media-item__link"
+                        aria-label="Behance"
                     >
                         <img
                             src="./assets/images/behance-logo.svg"
@@ -531,6 +660,7 @@
                             target="_blank"
                             href="mailto:trantrongnguyen2552003@gmail.com"
                             class="social-media-item__link"
+                            aria-label="Linkedin"
                         >
                             <img
                                 src="./assets/images/gmail-logo.svg"
@@ -549,6 +679,7 @@
                             target="_blank"
                             href="https://t.me/TTNguyen2552003"
                             class="social-media-item__link"
+                            aria-label="GitHub"
                         >
                             <img
                                 src="./assets/images/telegram-logo.svg"
@@ -567,6 +698,7 @@
                             target="_blank"
                             href="https://wa.link/am9f4t"
                             class="social-media-item__link"
+                            aria-label="Behance"
                         >
                             <img
                                 src="./assets/images/whatsapp-logo.svg"

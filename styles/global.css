@@ -11,6 +11,10 @@ html {
     overflow-x: hidden;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 body {
     box-sizing: border-box;
     width: 100%;

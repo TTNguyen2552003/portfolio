@@ -120,6 +120,8 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 var(--gap-positive-600);
+        z-index: 1;
+        transition: 500ms linear;
 
         .header__logo-container {
             width: 48px;
