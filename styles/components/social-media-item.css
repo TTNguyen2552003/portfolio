@@ -37,7 +37,7 @@
     }
 
     .social-media-item:nth-child(3) {
-        social-media-item__link {
+        .social-media-item__link {
             animation-duration: 800ms;
             animation-delay: 2200ms;
         }
