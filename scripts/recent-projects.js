@@ -123,7 +123,7 @@ class RecentProjects {
         })
 
         window.addEventListener("resize", () => {
-            translateThumbnails(this.selectedIndex)
+            this.translateThumbnails(this.selectedIndex)
         })
     }
 
