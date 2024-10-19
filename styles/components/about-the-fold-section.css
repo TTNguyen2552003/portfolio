@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        overflow: hidden;
 
         .about-the-fold__background {
             position: absolute;
@@ -26,6 +27,8 @@
             gap: var(--gap-positive-400);
             align-items: center;
             z-index: 1;
+            transform: translateY(100%);
+            animation: emphasis-fly-in--up 1000ms cubic-bezier(0.25, 1, 0.5, 1) 2200ms forwards;
         }
 
         .about-the-fold__avatar {
@@ -56,12 +59,10 @@
 
         .about-the-fold__greeting {
             font: var(--typography-desktop-title-hero);
-            background-image: linear-gradient(
-                to right,
-                var(--theme-gradient-1),
-                var(--theme-gradient-2),
-                var(--theme-gradient-3)
-            );
+            background-image: linear-gradient(to right,
+                    var(--theme-gradient-1),
+                    var(--theme-gradient-2),
+                    var(--theme-gradient-3));
             background-clip: text;
             color: transparent;
         }
@@ -101,6 +102,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0 var(--gap-positive-700);
+        overflow: hidden;
 
         .about-the-fold__background {
             position: absolute;
@@ -120,6 +122,8 @@
             gap: var(--gap-positive-400);
             align-items: center;
             z-index: 1;
+            transform: translateY(100%);
+            animation: emphasis-fly-in--up 1000ms cubic-bezier(0.25, 1, 0.5, 1) 2200ms forwards;
         }
 
         .about-the-fold__avatar {
@@ -150,12 +154,10 @@
 
         .about-the-fold__greeting {
             font: var(--typography-tablet-title-hero);
-            background-image: linear-gradient(
-                to right,
-                var(--theme-gradient-1),
-                var(--theme-gradient-2),
-                var(--theme-gradient-3)
-            );
+            background-image: linear-gradient(to right,
+                    var(--theme-gradient-1),
+                    var(--theme-gradient-2),
+                    var(--theme-gradient-3));
             background-clip: text;
             color: transparent;
         }
@@ -193,6 +195,7 @@
         display: flex;
         padding: 0 var(--gap-positive-600);
         align-items: flex-start;
+        overflow: hidden;
 
         .about-the-fold__background {
             position: absolute;
@@ -210,6 +213,9 @@
             flex-direction: column;
             gap: var(--gap-positive-300);
             align-items: center;
+            transform: translateY(100%);
+            z-index: 1;
+            animation: emphasis-fly-in--up 1000ms cubic-bezier(0.25, 1, 0.5, 1) 2200ms forwards;
         }
 
         .about-the-fold__avatar {
@@ -240,12 +246,10 @@
 
         .about-the-fold__greeting {
             font: var(--typography-mobile-title-hero);
-            background-image: linear-gradient(
-                to right,
-                var(--theme-gradient-1),
-                var(--theme-gradient-2),
-                var(--theme-gradient-3)
-            );
+            background-image: linear-gradient(to right,
+                    var(--theme-gradient-1),
+                    var(--theme-gradient-2),
+                    var(--theme-gradient-3));
             background-clip: text;
             color: transparent;
         }

@@ -13,6 +13,10 @@
         />
         <link
             rel="stylesheet"
+            href="./styles/animation.css"
+        />
+        <link
+            rel="stylesheet"
             href="./styles/variables/elevation.css"
         />
         <link
@@ -103,6 +107,10 @@
             rel="stylesheet"
             href="./styles/components/drawer-menu.css"
         />
+        <link
+            rel="stylesheet"
+            href="./styles/components/splash-screen.css"
+        />
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="./scripts/avatar-frame.js"></script>
         <script src="./scripts/about-the-fold-background.js"></script>
@@ -113,6 +121,24 @@
         <script src="./scripts/drawer-menu.js"></script>
     </head>
     <body>
+        <div
+            class="splash-screen"
+            id="splash-screen"
+        >
+            <div class="splash-screen__animated-component">
+                <ul class="animated-component__letters">
+                    <li class="animated-component__letter">W</li>
+                    <li class="animated-component__letter">E</li>
+                    <li class="animated-component__letter">L</li>
+                    <li class="animated-component__letter">C</li>
+                    <li class="animated-component__letter">O</li>
+                    <li class="animated-component__letter">M</li>
+                    <li class="animated-component__letter">E</li>
+                </ul>
+                <div class="animated-component__cover-letters-layer"></div>
+            </div>
+        </div>
+
         <div
             class="drawer-menu drawer-menu--hidden"
             id="drawer-menu"
@@ -134,28 +160,40 @@
                 <div class="drawer-menu-navigation__title">NAVIGATION</div>
                 <div class="drawer-menu-navigation__divider"></div>
                 <ul class="drawer-menu-navigation__items">
-                    <li class="drawer-menu-navigation-item">
+                    <li
+                        magnetic-hover
+                        class="drawer-menu-navigation-item"
+                    >
                         <a
                             href="#about-the-fold"
                             class="drawer-menu-navigation-item__link"
                             >Home</a
                         >
                     </li>
-                    <li class="drawer-menu-navigation-item">
+                    <li
+                        magnetic-hover
+                        class="drawer-menu-navigation-item"
+                    >
                         <a
                             href="#about"
                             class="drawer-menu-navigation-item__link"
                             >About</a
                         >
                     </li>
-                    <li class="drawer-menu-navigation-item">
+                    <li
+                        magnetic-hover
+                        class="drawer-menu-navigation-item"
+                    >
                         <a
                             href="#recent-projects"
                             class="drawer-menu-navigation-item__link"
                             >Recent projects</a
                         >
                     </li>
-                    <li class="drawer-menu-navigation-item">
+                    <li
+                        magnetic-hover
+                        class="drawer-menu-navigation-item"
+                    >
                         <a
                             href="#footer"
                             class="drawer-menu-navigation-item__link"

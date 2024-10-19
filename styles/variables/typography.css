@@ -1,6 +1,8 @@
 @import url(./typography-primitive.css);
 
 :root {
+    --typography-desktop-splash-screen: var(--font-weight-bold) var(--type-scale-desktop-scale-up-6) /
+        var(--type-scale-desktop-line-height) var(--font-family-brand);
     --typography-desktop-title-hero: var(--font-weight-bold) var(--type-scale-desktop-scale-up-5) /
         var(--type-scale-desktop-line-height) var(--font-family-brand);
     --typography-desktop-title-page: var(--font-weight-bold) var(--type-scale-desktop-scale-up-4) /
@@ -18,6 +20,8 @@
     --typography-desktop-supporting-text: var(--font-weight-regular) var(--type-scale-desktop-scale-down-1) /
         var(--type-scale-desktop-line-height) var(--font-family-plain);
 
+    --typography-tablet-splash-screen: var(--font-weight-bold) var(--type-scale-tablet-scale-up-6) /
+        var(--type-scale-tablet-line-height) var(--font-family-brand);
     --typography-tablet-title-hero: var(--font-weight-bold) var(--type-scale-tablet-scale-up-5) /
         var(--type-scale-tablet-line-height) var(--font-family-brand);
     --typography-tablet-title-page: var(--font-weight-bold) var(--type-scale-tablet-scale-up-4) /
@@ -35,6 +39,8 @@
     --typography-tablet-supporting-text: var(--font-weight-regular) var(--type-scale-tablet-scale-down-1) /
         var(--type-scale-tablet-line-height) var(--font-family-plain);
 
+    --typography-mobile-splash-screen: var(--font-weight-bold) var(--type-scale-mobile-scale-up-6) /
+        var(--type-scale-mobile-line-height) var(--font-family-brand);
     --typography-mobile-title-hero: var(--font-weight-bold) var(--type-scale-mobile-scale-up-5) /
         var(--type-scale-mobile-line-height) var(--font-family-brand);
     --typography-mobile-title-page: var(--font-weight-bold) var(--type-scale-mobile-scale-up-4) /

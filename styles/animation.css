@@ -1,0 +1,19 @@
+@keyframes emphasis-fly-in--up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes exit-fly-in--up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-150%);
+    }
+}

@@ -1,0 +1,212 @@
+@media (min-width: 1025px) {
+    .splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--theme-surface);
+        box-shadow: var(--elevation-extra-high);
+        z-index: 3;
+        animation: exit-fly-in--up 1000ms cubic-bezier(0.11, 0, 0.5, 0) 1600ms forwards;
+
+        .splash-screen__animated-component {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+
+            .animated-component__letters {
+                display: flex;
+                align-items: center;
+                z-index: 0;
+            }
+
+            .animated-component__letter {
+                font: var(--typography-desktop-splash-screen);
+                color: var(--theme-on-surface-shade-2);
+                transform: translateY(100%);
+                animation: emphasis-fly-in--up cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            }
+
+            .animated-component__letter:nth-child(1) {
+                animation-duration: 1500ms;
+                animation-delay: 0;
+            }
+
+            .animated-component__letter:nth-child(2) {
+                animation-duration: 1400ms;
+                animation-delay: 100ms;
+            }
+
+            .animated-component__letter:nth-child(3) {
+                animation-duration: 1300ms;
+                animation-delay: 200ms;
+            }
+
+            .animated-component__letter:nth-child(4) {
+                animation-duration: 1200ms;
+                animation-delay: 300ms;
+            }
+
+            .animated-component__letter:nth-child(5) {
+                animation-duration: 1100ms;
+                animation-delay: 400ms;
+            }
+
+            .animated-component__letter:nth-child(6) {
+                animation-duration: 1000ms;
+                animation-delay: 500ms;
+            }
+
+            .animated-component__letter:nth-child(7) {
+                animation-duration: 900ms;
+                animation-delay: 600ms;
+            }
+        }
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--theme-surface);
+        box-shadow: var(--elevation-extra-high);
+        z-index: 3;
+        animation: exit-fly-in--up 1000ms cubic-bezier(0.11, 0, 0.5, 0) 1600ms forwards;
+
+        .splash-screen__animated-component {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+
+            .animated-component__letters {
+                display: flex;
+                align-items: center;
+                z-index: 0;
+            }
+
+            .animated-component__letter {
+                font: var(--typography-tablet-splash-screen);
+                color: var(--theme-on-surface-shade-2);
+                transform: translateY(100%);
+                animation: emphasis-fly-in--up cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            }
+
+            .animated-component__letter:nth-child(1) {
+                animation-duration: 1500ms;
+                animation-delay: 0;
+            }
+
+            .animated-component__letter:nth-child(2) {
+                animation-duration: 1400ms;
+                animation-delay: 100ms;
+            }
+
+            .animated-component__letter:nth-child(3) {
+                animation-duration: 1300ms;
+                animation-delay: 200ms;
+            }
+
+            .animated-component__letter:nth-child(4) {
+                animation-duration: 1200ms;
+                animation-delay: 300ms;
+            }
+
+            .animated-component__letter:nth-child(5) {
+                animation-duration: 1100ms;
+                animation-delay: 400ms;
+            }
+
+            .animated-component__letter:nth-child(6) {
+                animation-duration: 1000ms;
+                animation-delay: 500ms;
+            }
+
+            .animated-component__letter:nth-child(7) {
+                animation-duration: 900ms;
+                animation-delay: 600ms;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--theme-surface);
+        box-shadow: var(--elevation-extra-high);
+        z-index: 3;
+        animation: exit-fly-in--up 1000ms cubic-bezier(0.11, 0, 0.5, 0) 1600ms forwards;
+
+        .splash-screen__animated-component {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+
+            .animated-component__letters {
+                display: flex;
+                align-items: center;
+                z-index: 0;
+            }
+
+            .animated-component__letter {
+                font: var(--typography-mobile-splash-screen);
+                color: var(--theme-on-surface-shade-2);
+                transform: translateY(100%);
+                animation: emphasis-fly-in--up cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            }
+
+            .animated-component__letter:nth-child(1) {
+                animation-duration: 1500ms;
+                animation-delay: 0;
+            }
+
+            .animated-component__letter:nth-child(2) {
+                animation-duration: 1400ms;
+                animation-delay: 100ms;
+            }
+
+            .animated-component__letter:nth-child(3) {
+                animation-duration: 1300ms;
+                animation-delay: 200ms;
+            }
+
+            .animated-component__letter:nth-child(4) {
+                animation-duration: 1200ms;
+                animation-delay: 300ms;
+            }
+
+            .animated-component__letter:nth-child(5) {
+                animation-duration: 1100ms;
+                animation-delay: 400ms;
+            }
+
+            .animated-component__letter:nth-child(6) {
+                animation-duration: 1000ms;
+                animation-delay: 500ms;
+            }
+
+            .animated-component__letter:nth-child(7) {
+                animation-duration: 900ms;
+                animation-delay: 600ms;
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@
         display: flex;
         gap: var(--gap-positive-1200);
         align-items: center;
+        overflow: hidden;
     }
 }
 
@@ -19,5 +20,6 @@
         display: flex;
         gap: var(--gap-positive-1200);
         align-items: center;
+        overflow: hidden;
     }
 }

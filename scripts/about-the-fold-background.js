@@ -95,8 +95,11 @@ class AboutTheFoldBackground {
      */
     initialize() {
         this.setupElements()
-        this.initialAnimation()
-        this.setupEventListeners()
+
+        setTimeout(() => {
+            this.initialAnimation()
+            this.setupEventListeners()
+        }, 2400) // 2600ms is the splash screen duration and 2400ms is the suitable time to call the animation of the background
     }
 
     /**
