@@ -71,7 +71,7 @@
     .social-media-item:nth-child(1) {
         .social-media-item__link {
             animation-duration: 1000ms;
-            animation-delay: 2000ms
+            animation-delay: 2000ms;
         }
     }
 

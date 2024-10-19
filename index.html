@@ -112,6 +112,7 @@
             href="./styles/components/splash-screen.css"
         />
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./scripts/avatar-frame.js"></script>
         <script src="./scripts/about-the-fold-background.js"></script>
         <script src="./scripts/magnetic-hover.js"></script>
@@ -119,6 +120,7 @@
         <script src="./scripts/header.js"></script>
         <script src="./scripts/recent-projects.js"></script>
         <script src="./scripts/drawer-menu.js"></script>
+        <script src="./scripts/scroll-trigger-animation.js"></script>
     </head>
     <body>
         <div
@@ -417,7 +419,9 @@
                 id="about"
                 class="about-section"
             >
-                <div class="section__title">About me</div>
+                <div class="section__title-container">
+                    <div class="section__title">About me</div>
+                </div>
                 <div class="about-section__introduction-cards-container">
                     <ul class="about-section__introduction-cards">
                         <li class="introduction-card">
@@ -488,7 +492,9 @@
                 </div>
             </section>
             <section id="recent-projects">
-                <div class="section__title">Recent projects</div>
+                <div class="section__title-container">
+                    <div class="section__title">Recent projects</div>
+                </div>
                 <div class="projects-container">
                     <ul class="project-thumbnails">
                         <li class="project-thumbnail">

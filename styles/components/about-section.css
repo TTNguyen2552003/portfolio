@@ -8,9 +8,15 @@
         gap: var(--gap-positive-700);
         align-items: center;
 
+        .section__title-container {
+            overflow: hidden;
+        }
+
         .section__title {
             font: var(--typography-desktop-title-page);
             color: var(--theme-on-surface-shade-2);
+            transform: translateY(-100%);
+            transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         .about-section__introduction-cards {
@@ -36,11 +42,15 @@
             display: none;
         }
 
+        .section__title-container {
+            overflow: hidden;
+        }
+
         .section__title {
-            margin: auto;
             font: var(--typography-tablet-title-page);
-            text-align: center;
             color: var(--theme-on-surface-shade-2);
+            transform: translateY(-100%);
+            transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         .about-section__introduction-cards {
@@ -63,9 +73,15 @@
         align-items: center;
         padding: 0 var(--gap-positive-400);
 
+        .section__title-container {
+            overflow: hidden;
+        }
+
         .section__title {
             font: var(--typography-mobile-title-page);
             color: var(--theme-on-surface-shade-2);
+            transform: translateY(-100%);
+            transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         .about-section__introduction-cards {

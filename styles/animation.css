@@ -8,6 +8,16 @@
     }
 }
 
+@keyframes emphasis-fly-in--down {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 @keyframes exit-fly-in--up {
     from {
         transform: translateY(0);
@@ -15,5 +25,15 @@
 
     to {
         transform: translateY(-150%);
+    }
+}
+
+@keyframes emphasis-spin--clockwise {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
     }
 }

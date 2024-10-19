@@ -9,6 +9,9 @@
         border-radius: var(--shape-large);
         background-color: var(--theme-surface-tint-2);
         box-shadow: var(--elevation-low);
+        opacity: 0;
+        transform: translateY(20%);
+        transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
     }
 }
 
@@ -25,6 +28,9 @@
         border-radius: var(--shape-large);
         background-color: var(--theme-surface-tint-2);
         box-shadow: var(--elevation-low);
+        opacity: 0;
+        transform: translateY(20%);
+        transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
     }
 }
 
@@ -40,5 +46,8 @@
         border-radius: var(--shape-large);
         background-color: var(--theme-surface-tint-2);
         box-shadow: var(--elevation-low);
+        opacity: 0;
+        transform: translateY(20%);
+        transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
     }
 }
