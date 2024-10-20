@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eOcVos0bglp1"
-    viewBox="0 0 320 320" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="320"
+    viewBox="0 0 320 320" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+    width="320"
     height="320">
     <defs>
         <filter id="eOcVos0bglp8-filter" x="-150%" width="400%" y="-150%" height="400%">
@@ -9,57 +10,73 @@
             <feGaussianBlur id="eOcVos0bglp10-filter-blur-0" stdDeviation="0.5,0.5" result="result" />
         </filter>
         <filter id="eOcVos0bglp12-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp12-filter-blur-0" stdDeviation="9.408,9.408" result="result" />
+            <feGaussianBlur id="eOcVos0bglp12-filter-blur-0" stdDeviation="9.408,9.408"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp14-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp14-filter-blur-0" stdDeviation="9.408,9.408" result="result" />
+            <feGaussianBlur id="eOcVos0bglp14-filter-blur-0" stdDeviation="9.408,9.408"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp16-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp16-filter-blur-0" stdDeviation="12.544,12.544" result="result" />
+            <feGaussianBlur id="eOcVos0bglp16-filter-blur-0" stdDeviation="12.544,12.544"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp18-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp18-filter-blur-0" stdDeviation="3.136,3.136" result="result" />
+            <feGaussianBlur id="eOcVos0bglp18-filter-blur-0" stdDeviation="3.136,3.136"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp20-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp20-filter-blur-0" stdDeviation="9.408,9.408" result="result" />
+            <feGaussianBlur id="eOcVos0bglp20-filter-blur-0" stdDeviation="9.408,9.408"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp24-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp24-filter-blur-0" stdDeviation="3.136,3.136" result="result" />
+            <feGaussianBlur id="eOcVos0bglp24-filter-blur-0" stdDeviation="3.136,3.136"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp28-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp28-filter-blur-0" stdDeviation="6.272,6.272" result="result" />
+            <feGaussianBlur id="eOcVos0bglp28-filter-blur-0" stdDeviation="6.272,6.272"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp30-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp30-filter-blur-0" stdDeviation="3.763,3.763" result="result" />
+            <feGaussianBlur id="eOcVos0bglp30-filter-blur-0" stdDeviation="3.763,3.763"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp36-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp36-filter-blur-0" stdDeviation="6.272,6.272" result="result" />
+            <feGaussianBlur id="eOcVos0bglp36-filter-blur-0" stdDeviation="6.272,6.272"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp38-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp38-filter-blur-0" stdDeviation="3.763,3.763" result="result" />
+            <feGaussianBlur id="eOcVos0bglp38-filter-blur-0" stdDeviation="3.763,3.763"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp42-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp42-filter-blur-0" stdDeviation="12.544,12.544" result="result" />
+            <feGaussianBlur id="eOcVos0bglp42-filter-blur-0" stdDeviation="12.544,12.544"
+                result="result" />
         </filter>
         <filter id="eOcVos0bglp44-filter" x="-150%" width="400%" y="-150%" height="400%">
-            <feGaussianBlur id="eOcVos0bglp44-filter-blur-0" stdDeviation="9.408,9.408" result="result" />
+            <feGaussianBlur id="eOcVos0bglp44-filter-blur-0" stdDeviation="9.408,9.408"
+                result="result" />
         </filter>
-        <linearGradient id="eOcVos0bglp9-fill" x1="31.884" y1="262.017" x2="80.118" y2="292.269" spreadMethod="pad"
+        <linearGradient id="eOcVos0bglp9-fill" x1="31.884" y1="262.017" x2="80.118" y2="292.269"
+            spreadMethod="pad"
             gradientUnits="userSpaceOnUse">
             <stop id="eOcVos0bglp9-fill-0" offset="0%" stop-color="#a8f0b9" />
             <stop id="eOcVos0bglp9-fill-1" offset="80.7%" stop-color="rgba(173,238,188,0)" />
         </linearGradient>
-        <linearGradient id="eOcVos0bglp11-fill" x1="296.167" y1="258.471" x2="248.66" y2="291.628" spreadMethod="pad"
+        <linearGradient id="eOcVos0bglp11-fill" x1="296.167" y1="258.471" x2="248.66" y2="291.628"
+            spreadMethod="pad"
             gradientUnits="userSpaceOnUse">
             <stop id="eOcVos0bglp11-fill-0" offset="29.2%" stop-color="#a8f0b9" />
             <stop id="eOcVos0bglp11-fill-1" offset="82.8%" stop-color="rgba(173,238,188,0)" />
         </linearGradient>
-        <linearGradient id="eOcVos0bglp52-fill" x1="88.598" y1="236.724" x2="89.238" y2="251.654" spreadMethod="pad"
+        <linearGradient id="eOcVos0bglp52-fill" x1="88.598" y1="236.724" x2="89.238" y2="251.654"
+            spreadMethod="pad"
             gradientUnits="userSpaceOnUse">
             <stop id="eOcVos0bglp52-fill-0" offset="0%" stop-color="#e2dde2" />
             <stop id="eOcVos0bglp52-fill-1" offset="100%" stop-color="rgba(226,221,226,0)" />
         </linearGradient>
-        <linearGradient id="eOcVos0bglp53-fill" x1="243.921" y1="243.075" x2="243.921" y2="255.321" spreadMethod="pad"
+        <linearGradient id="eOcVos0bglp53-fill" x1="243.921" y1="243.075" x2="243.921" y2="255.321"
+            spreadMethod="pad"
             gradientUnits="userSpaceOnUse">
             <stop id="eOcVos0bglp53-fill-0" offset="0%" stop-color="#373637" />
             <stop id="eOcVos0bglp53-fill-1" offset="100%" stop-color="rgba(55,54,55,0)" />
@@ -69,22 +86,26 @@
             <stop id="eOcVos0bglp65-fill-0" offset="0%" stop-color="rgba(255,255,255,0)" />
             <stop id="eOcVos0bglp65-fill-1" offset="100%" stop-color="#010022" />
         </linearGradient>
-        <radialGradient id="eOcVos0bglp22-fill" cx="0" cy="0" r="1" spreadMethod="pad" gradientUnits="userSpaceOnUse"
+        <radialGradient id="eOcVos0bglp22-fill" cx="0" cy="0" r="1" spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-10.3498 3.10174 -2.347 -7.8314 53.312 143.469)">
             <stop id="eOcVos0bglp22-fill-0" offset="0%" stop-color="#fff" />
             <stop id="eOcVos0bglp22-fill-1" offset="94.8%" stop-color="rgba(255,255,255,0)" />
         </radialGradient>
-        <radialGradient id="eOcVos0bglp23-fill" cx="0" cy="0" r="1" spreadMethod="pad" gradientUnits="userSpaceOnUse"
+        <radialGradient id="eOcVos0bglp23-fill" cx="0" cy="0" r="1" spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-11.1163 3.3266 -2.4106 -8.05538 267.281 140.995)">
             <stop id="eOcVos0bglp23-fill-0" offset="0%" stop-color="#fff" />
             <stop id="eOcVos0bglp23-fill-1" offset="94.8%" stop-color="rgba(255,255,255,0)" />
         </radialGradient>
-        <radialGradient id="eOcVos0bglp46-fill" cx="0" cy="0" r="1" spreadMethod="pad" gradientUnits="userSpaceOnUse"
+        <radialGradient id="eOcVos0bglp46-fill" cx="0" cy="0" r="1" spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-2.96815 3.18596 -5.79937 -5.40289 100.506 248.646)">
             <stop id="eOcVos0bglp46-fill-0" offset="0%" stop-color="#93e19f" />
             <stop id="eOcVos0bglp46-fill-1" offset="100%" stop-color="rgba(147,225,159,0)" />
         </radialGradient>
-        <radialGradient id="eOcVos0bglp47-fill" cx="0" cy="0" r="1" spreadMethod="pad" gradientUnits="userSpaceOnUse"
+        <radialGradient id="eOcVos0bglp47-fill" cx="0" cy="0" r="1" spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(2.96555 3.18317 -5.79658 5.40029 236.714 246.96)">
             <stop id="eOcVos0bglp47-fill-0" offset="0%" stop-color="#93e19f" />
             <stop id="eOcVos0bglp47-fill-1" offset="100%" stop-color="rgba(147,225,159,0)" />
@@ -141,33 +162,39 @@
                         fill="#202124" />
                 </g>
                 <g mask="url(#eOcVos0bglp32)">
-                    <g style="mix-blend-mode:multiply" opacity=".3" filter="url(#eOcVos0bglp28-filter)">
+                    <g style="mix-blend-mode:multiply" opacity=".3"
+                        filter="url(#eOcVos0bglp28-filter)">
                         <path
                             d="M251.268 199.866c-13.428-5.674-24.899-8.923-25.6-7.249-.714 1.686 9.477 6.4 22.904 12.086 13.44 5.674 25.034 10.166 25.748 8.492.701-1.686-9.612-7.643-23.052-13.329"
                             fill="#0d652d" />
                     </g>
-                    <g style="mix-blend-mode:screen" opacity=".3" filter="url(#eOcVos0bglp30-filter)">
+                    <g style="mix-blend-mode:screen" opacity=".3"
+                        filter="url(#eOcVos0bglp30-filter)">
                         <path
                             d="M223.735 189.146c-3.741-1.834-7.077-2.733-7.433-2.007-.357.739 2.461 2.302 6.19 4.148 3.742 1.846 7.016 3.249 7.373 2.523.356-.738-2.388-2.831-6.13-4.664"
                             fill="#81c995" />
                     </g>
-                    <mask id="eOcVos0bglp32" mask-type="alpha" x="-150%" y="-150%" height="400%" width="400%">
+                    <mask id="eOcVos0bglp32" mask-type="alpha" x="-150%" y="-150%" height="400%"
+                        width="400%">
                         <path
                             d="M246.247 202.48c-7.508-4.677-24.665-12.726-32.308-16.16l5.046-17.858 49.33 19.84c-4.234 6.683-14.56 18.868-22.068 14.178" />
                     </mask>
                 </g>
                 <g mask="url(#eOcVos0bglp40)">
-                    <g style="mix-blend-mode:multiply" opacity=".3" filter="url(#eOcVos0bglp36-filter)">
+                    <g style="mix-blend-mode:multiply" opacity=".3"
+                        filter="url(#eOcVos0bglp36-filter)">
                         <path
                             d="M67.872 201.369c13.317-5.957 24.713-9.44 25.464-7.779.739 1.662-9.354 6.597-22.67 12.554s-24.813 10.683-25.551 9.022c-.739-1.662 9.427-7.84 22.757-13.797"
                             fill="#0d652d" />
                     </g>
-                    <g style="mix-blend-mode:screen" opacity=".3" filter="url(#eOcVos0bglp38-filter)">
+                    <g style="mix-blend-mode:screen" opacity=".3"
+                        filter="url(#eOcVos0bglp38-filter)">
                         <path
                             d="M95.109 190.115c3.692-1.92 7.015-2.88 7.384-2.154s-2.4 2.339-6.104 4.259-6.942 3.396-7.311 2.67c-.37-.714 2.326-2.855 6.03-4.775"
                             fill="#81c995" />
                     </g>
-                    <mask id="eOcVos0bglp40" mask-type="alpha" x="-150%" y="-150%" height="400%" width="400%">
+                    <mask id="eOcVos0bglp40" mask-type="alpha" x="-150%" y="-150%" height="400%"
+                        width="400%">
                         <path
                             d="M72.955 203.974c7.397-4.837 24.381-13.219 31.963-16.825l-5.415-17.748-48.899 20.85c4.357 6.597 14.942 18.56 22.35 13.723" />
                     </mask>
@@ -209,14 +236,16 @@
                 <path
                     d="M77.176 247.477c-3.545.763-6.203 4.467-6.954 6.252l1.773 2.683s1.255-2.179 2.646-3.569c1.39-1.416 3.544-2.954 4.43-3.582l-1.772-1.784zm172.431.086c3.421.64 6.067 4.221 6.954 6.006l-1.76 2.548s-1.268-2.044-2.659-3.447-3.421-2.806-4.308-3.446zm-158.005 19.04c-1.649.899-4.307 2.179-5.44 2.683l-1.009 3.065c2.646-.898 4.554-2.425 5.305-3.065zm5.305-13.415a20 20 0 0 0-1.01-2.683v1.144c.493.899.887 2.548 1.01 3.324 0-.259.246-1.022 0-1.92zm137.906 13.69c1.637.887 4.308 2.166 5.44 2.683l1.01 3.053a16.6 16.6 0 0 1-5.317-3.053zm-5.206-13.427c.246-.899.763-2.166 1.009-2.683v1.156a12.4 12.4 0 0 0-1.009 3.324c0-.271-.246-1.034 0-1.92z"
                     opacity=".8" fill="#e2dce1" />
-                <mask id="eOcVos0bglp60" mask-type="alpha" x="-150%" y="-150%" height="400%" width="400%">
+                <mask id="eOcVos0bglp60" mask-type="alpha" x="-150%" y="-150%" height="400%"
+                    width="400%">
                     <path
                         d="M315.343 298.899a158.3 158.3 0 0 0-24.997-54.486 159.3 159.3 0 0 0-25.797-28.271 160 160 0 0 0-19.815-14.585l.172-.32 9.6-16.553 9.391-16.185 6.732-11.619a14.585 14.585 0 0 0-25.206-14.621l-6.732 11.618-9.391 16.173-9.6 16.566-1.058 1.821-1.453-.578a159.1 159.1 0 0 0-56.787-10.4h-1.637a159.2 159.2 0 0 0-56.296 10.855l-.984-1.686-9.6-16.566-9.379-16.185-6.744-11.618a14.562 14.562 0 0 0-22.223-3.623 14.56 14.56 0 0 0-4.448 7.192 14.6 14.6 0 0 0 1.477 11.052l6.732 11.631 9.39 16.173 9.6 16.566.087.135A160.2 160.2 0 0 0 18.9 263.293a158.6 158.6 0 0 0-13.415 35.618c-2.683 10.905 6.141 20.702 17.378 20.702h275.065c11.224 0 20.098-9.809 17.415-20.714"
                         fill="#34a853" />
                 </mask>
             </g>
             <clipPath id="eOcVos0bglp62">
-                <rect width="320" height="184.615" rx="0" ry="0" transform="translate(0 135)" fill="#fff" />
+                <rect width="320" height="184.615" rx="0" ry="0" transform="translate(0 135)"
+                    fill="#fff" />
             </clipPath>
         </g>
         <path id="eOcVos0bglp64"

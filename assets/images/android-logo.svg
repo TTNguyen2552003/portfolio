@@ -1,5 +1,6 @@
 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="135" width="311" height="185">
+    <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="135" width="311"
+        height="185">
         <path
             d="M315.343 298.899a158.3 158.3 0 0 0-24.997-54.486 159.3 159.3 0 0 0-25.797-28.271 160 160 0 0 0-19.815-14.585l.172-.32 9.6-16.553 9.391-16.185 6.732-11.619a14.585 14.585 0 0 0-25.206-14.621l-6.732 11.618-9.391 16.173-9.6 16.566-1.058 1.821-1.453-.578a159.1 159.1 0 0 0-56.787-10.4h-1.637a159.2 159.2 0 0 0-56.296 10.855l-.984-1.686-9.6-16.566-9.379-16.185-6.744-11.618a14.562 14.562 0 0 0-22.223-3.623 14.56 14.56 0 0 0-4.448 7.192 14.6 14.6 0 0 0 1.477 11.052l6.732 11.631 9.39 16.173 9.6 16.566.087.135A160.2 160.2 0 0 0 18.9 263.293a158.6 158.6 0 0 0-13.415 35.618c-2.683 10.905 6.141 20.702 17.378 20.702h275.065c11.224 0 20.098-9.809 17.415-20.714"
             fill="#34A853" />
@@ -52,7 +53,8 @@
                 d="M243.786 202.213c-1.551-.972 6.277-16.123 17.452-33.846 11.188-17.723 21.502-31.311 23.04-30.338s-6.277 16.123-17.465 33.846c-11.175 17.723-21.477 31.311-23.027 30.338"
                 fill="#202124" />
         </g>
-        <mask id="n" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="213" y="168" width="56" height="36">
+        <mask id="n" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="213" y="168" width="56"
+            height="36">
             <path
                 d="M246.247 202.48c-7.508-4.677-24.665-12.726-32.308-16.16l5.046-17.858 49.33 19.84c-4.234 6.683-14.56 18.868-22.068 14.178"
                 fill="#000" />
@@ -69,7 +71,8 @@
                     fill="#81C995" />
             </g>
         </g>
-        <mask id="q" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="50" y="169" width="55" height="37">
+        <mask id="q" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="50" y="169" width="55"
+            height="37">
             <path
                 d="M72.955 203.974c7.397-4.837 24.381-13.219 31.963-16.825l-5.416-17.748-48.898 20.85c4.357 6.597 14.942 18.56 22.35 13.723"
                 fill="#000" />
@@ -128,85 +131,99 @@
             fill="#E2DCE1" />
     </g>
     <defs>
-        <filter id="b" x="5.903" y="196.717" width="155.85" height="219.956" filterUnits="userSpaceOnUse"
+        <filter id="b" x="5.903" y="196.717" width="155.85" height="219.956"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation=".5" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="d" x="159.741" y="196.716" width="163.679" height="207.972" filterUnits="userSpaceOnUse"
+        <filter id="d" x="159.741" y="196.716" width="163.679" height="207.972"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation=".5" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="f" x="-50.376" y="178.927" width="132.631" height="194.669" filterUnits="userSpaceOnUse"
+        <filter id="f" x="-50.376" y="178.927" width="132.631" height="194.669"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="9.408" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="g" x="223.925" y="175.223" width="132.631" height="194.67" filterUnits="userSpaceOnUse"
+        <filter id="g" x="223.925" y="175.223" width="132.631" height="194.67"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="9.408" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="h" x="22.15" y="104.697" width="81.961" height="119.382" filterUnits="userSpaceOnUse"
+        <filter id="h" x="22.15" y="104.697" width="81.961" height="119.382"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="12.544" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="i" x="28.232" y="131.228" width="54.441" height="76.17" filterUnits="userSpaceOnUse"
+        <filter id="i" x="28.232" y="131.228" width="54.441" height="76.17"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="3.136" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="j" x="30.658" y="117.316" width="87.847" height="88.73" filterUnits="userSpaceOnUse"
+        <filter id="j" x="30.658" y="117.316" width="87.847" height="88.73"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="9.408" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="m" x="237.318" y="131.707" width="53.425" height="76.827" filterUnits="userSpaceOnUse"
+        <filter id="m" x="237.318" y="131.707" width="53.425" height="76.827"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="3.136" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="o" x="213.088" y="179.633" width="73.809" height="46.461" filterUnits="userSpaceOnUse"
+        <filter id="o" x="213.088" y="179.633" width="73.809" height="46.461"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="6.272" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="p" x="208.745" y="179.362" width="28.677" height="22.169" filterUnits="userSpaceOnUse"
+        <filter id="p" x="208.745" y="179.362" width="28.677" height="22.169"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="3.763" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="r" x="32.533" y="180.632" width="73.385" height="47.414" filterUnits="userSpaceOnUse"
+        <filter id="r" x="32.533" y="180.632" width="73.385" height="47.414"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="6.272" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="s" x="81.518" y="180.193" width="28.534" height="22.412" filterUnits="userSpaceOnUse"
+        <filter id="s" x="81.518" y="180.193" width="28.534" height="22.412"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="3.763" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="t" x="218.272" y="105.489" width="80.937" height="119.824" filterUnits="userSpaceOnUse"
+        <filter id="t" x="218.272" y="105.489" width="80.937" height="119.824"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="12.544" result="effect1_foregroundBlur_127_966" />
         </filter>
-        <filter id="u" x="203.217" y="107.264" width="90.784" height="99.533" filterUnits="userSpaceOnUse"
+        <filter id="u" x="203.217" y="107.264" width="90.784" height="99.533"
+            filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
@@ -232,19 +249,23 @@
             <stop stop-color="#93E19F" />
             <stop offset="1" stop-color="#93E19F" stop-opacity="0" />
         </radialGradient>
-        <linearGradient id="c" x1="31.884" y1="262.017" x2="80.118" y2="292.269" gradientUnits="userSpaceOnUse">
+        <linearGradient id="c" x1="31.884" y1="262.017" x2="80.118" y2="292.269"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#A8F0B9" />
             <stop offset=".807" stop-color="#ADEEBC" stop-opacity="0" />
         </linearGradient>
-        <linearGradient id="e" x1="296.167" y1="258.471" x2="248.66" y2="291.628" gradientUnits="userSpaceOnUse">
+        <linearGradient id="e" x1="296.167" y1="258.471" x2="248.66" y2="291.628"
+            gradientUnits="userSpaceOnUse">
             <stop offset=".292" stop-color="#A8F0B9" />
             <stop offset=".828" stop-color="#ADEEBC" stop-opacity="0" />
         </linearGradient>
-        <linearGradient id="x" x1="88.598" y1="236.724" x2="89.238" y2="251.654" gradientUnits="userSpaceOnUse">
+        <linearGradient id="x" x1="88.598" y1="236.724" x2="89.238" y2="251.654"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#E2DDE2" />
             <stop offset="1" stop-color="#E2DDE2" stop-opacity="0" />
         </linearGradient>
-        <linearGradient id="y" x1="243.921" y1="243.075" x2="243.921" y2="255.321" gradientUnits="userSpaceOnUse">
+        <linearGradient id="y" x1="243.921" y1="243.075" x2="243.921" y2="255.321"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#373637" />
             <stop offset="1" stop-color="#373637" stop-opacity="0" />
         </linearGradient>
