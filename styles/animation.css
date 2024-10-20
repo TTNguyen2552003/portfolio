@@ -37,3 +37,29 @@
         rotate: 360deg;
     }
 }
+
+@keyframes emphasis-gelatine {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    12.5% {
+        transform: scale(0.9, 1.1);
+    }
+
+    25% {
+        transform: scale(1.1, 0.9);
+    }
+
+    37.5% {
+        transform: scale(0.95, 1.05);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}

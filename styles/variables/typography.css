@@ -26,7 +26,7 @@
         var(--type-scale-tablet-line-height) var(--font-family-brand);
     --typography-tablet-title-page: var(--font-weight-bold) var(--type-scale-tablet-scale-up-4) /
         var(--type-scale-tablet-line-height) var(--font-family-brand);
-    --typography-tablet-subtitle: var(--font-weight-regular) var(--type-scale-tablet-scale-up-p3) /
+    --typography-tablet-subtitle: var(--font-weight-regular) var(--type-scale-tablet-scale-up-3) /
         var(--type-scale-tablet-line-height) var(--font-family-brand);
     --typography-tablet-heading: var(--font-weight-semibold) var(--type-scale-tablet-scale-up-2) /
         var(--type-scale-tablet-line-height) var(--font-family-brand);
