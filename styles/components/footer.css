@@ -118,7 +118,7 @@
                 width: 280px;
                 height: 280px;
                 z-index: 1;
-                animation: spin 10s linear infinite;
+                animation: emphasis-spin--clockwise 10s linear infinite;
             }
 
             svg {
@@ -190,7 +190,7 @@
                 width: 240px;
                 height: 240px;
                 z-index: 1;
-                animation: spin 10s linear infinite;
+                animation: emphasis-spin--clockwise 10s linear infinite;
             }
 
             svg {
