@@ -61,7 +61,7 @@ class MagneticHover {
 
                 gsap.to(element, {
                     x: (cursorPosX - this.boundingRects[index].width / 2) * 0.4,
-                    y: (cursorPosX - this.boundingRects[index].height / 2) * 0.4,
+                    y: (cursorPosY - this.boundingRects[index].height / 2) * 0.4,
                     duration: 0.8,
                     ease: "power3.out"
                 })

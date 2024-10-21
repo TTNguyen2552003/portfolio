@@ -107,7 +107,6 @@ class RecentProjects {
         this.projectShortcuts.forEach((shortcut, projectShortcutIndex) => {
             shortcut.addEventListener("mouseover", () => {
                 this.selectedIndex = projectShortcutIndex
-
                 this.translateThumbnails(this.selectedIndex)
             })
 
