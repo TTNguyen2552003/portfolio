@@ -16,6 +16,10 @@
         scale: 100%;
         transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
 
+        picture {
+            width: 100%;
+        }
+
         .introduction-card__figure {
             width: 100%;
             aspect-ratio: 16 / 9;
@@ -95,6 +99,10 @@
         align-self: flex-start;
         transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
 
+        picture {
+            width: 100%;
+        }
+
         .introduction-card__figure {
             width: 100%;
             aspect-ratio: 16 / 9;
@@ -161,6 +169,10 @@
         box-shadow: var(--elevation-low);
         z-index: 0;
         transition: 1000ms cubic-bezier(0.25, 1, 0.5, 1);
+
+        picture {
+            width: 100%;
+        }
 
         .introduction-card__figure {
             width: 100%;
