@@ -224,15 +224,24 @@ class AboutTheFoldBackground {
     }
 
     /**
-     * Sets up event listeners for mouse interactions and window resizing.
+     * Sets up event listeners for mouse and touch interactions and window resizing.
      */
     setupEventListeners() {
-        // Handles mousemove events to animate particles towards the cursor
-        const mousemoveEventHandler = (event) => {
-            const cursorCoordinates = new AboutTheFoldBackground.Coordinates(
-                event.clientX - this.aboutTheFoldBounding.left,
-                event.clientY - this.aboutTheFoldBounding.top
-            )
+        // Handles mousemove and touchmove events to animate particles towards the cursor
+        const mousemoveAndTouchMoveEventHandler = (event) => {
+            let cursorCoordinates = null
+            if (event.type == "mousemove") {
+                cursorCoordinates = new AboutTheFoldBackground.Coordinates(
+                    event.clientX - this.aboutTheFoldBounding.left,
+                    event.clientY - this.aboutTheFoldBounding.top
+                )
+
+            } else if (event.type == "touchmove") {
+                cursorCoordinates = new AboutTheFoldBackground.Coordinates(
+                    event.touches[0].clientX - this.aboutTheFoldBounding.left,
+                    event.touches[0].clientY - this.aboutTheFoldBounding.top
+                )
+            }
 
             const animate = (timestamp) => {
                 if (!this.cursorAnimationStartTime) this.cursorAnimationStartTime = timestamp
@@ -254,15 +263,21 @@ class AboutTheFoldBackground {
 
             this.cursorAnimationId = requestAnimationFrame(animate)
         }
+        this.aboutTheFold.addEventListener("mousemove", mousemoveAndTouchMoveEventHandler)
+        this.aboutTheFold.addEventListener("touchmove", mousemoveAndTouchMoveEventHandler)
 
-        this.aboutTheFold.addEventListener("mousemove", mousemoveEventHandler)
-        this.aboutTheFold.addEventListener("mouseleave", () => {
+        let mouseleaveAndTouchendEventHandler = () => {
             this.cancelAnimation()
             this.explodeAnimation()
-        })
-        this.aboutTheFold.addEventListener("mouseenter", () => {
+        }
+        this.aboutTheFold.addEventListener("mouseleave", mouseleaveAndTouchendEventHandler)
+        this.aboutTheFold.addEventListener("touchend", mouseleaveAndTouchendEventHandler)
+
+        let mouseenterAndTouchstartEventHandler = () => {
             this.cancelAnimation()
-        })
+        }
+        this.aboutTheFold.addEventListener("mouseenter", mouseenterAndTouchstartEventHandler)
+        this.aboutTheFold.addEventListener("touchstart", mouseenterAndTouchstartEventHandler)
 
         // Adjusts the canvas size when the window is resized
         window.addEventListener("resize", () => {

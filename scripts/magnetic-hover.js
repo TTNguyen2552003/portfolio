@@ -37,34 +37,48 @@ class MagneticHover {
     }
 
     /**
-     * Set up event listeners for the magnetic hover effect.
+     * Set up event listeners for the magnetic hover / magnetic touch effect.
      */
     setupEventListener() {
         this.elements.forEach((element, index) => {
-            element.addEventListener("mouseenter", () => {
+            let mouseenterAndTouchStartEventHandler = () => {
                 this.boundingRects[index] = element.getBoundingClientRect()
-            })
+            }
+            element.addEventListener("mouseenter", mouseenterAndTouchStartEventHandler)
+            element.addEventListener("touchstart", mouseenterAndTouchStartEventHandler)
 
-            element.addEventListener("mousemove", (event) => {
-                const mousePosX = event.clientX - this.boundingRects[index].x
-                const mousePosY = event.clientY - this.boundingRects[index].y
+            let mousemoveAndTouchmoveEventHandler = (event) => {
+                let cursorPosX = null
+                let cursorPosY = null
+
+                if (event.type == "mousemove") {
+                    cursorPosX = event.clientX - this.boundingRects[index].x
+                    cursorPosY = event.clientY - this.boundingRects[index].y
+                } else if (event.type == "touchmove") {
+                    cursorPosX = event.touches[0].clientX - this.boundingRects[index].x
+                    cursorPosY = event.touches[0].clientY - this.boundingRects[index].y
+                }
 
                 gsap.to(element, {
-                    x: (mousePosX - this.boundingRects[index].width / 2) * 0.4,
-                    y: (mousePosY - this.boundingRects[index].height / 2) * 0.4,
+                    x: (cursorPosX - this.boundingRects[index].width / 2) * 0.4,
+                    y: (cursorPosX - this.boundingRects[index].height / 2) * 0.4,
                     duration: 0.8,
                     ease: "power3.out"
                 })
-            })
+            }
+            element.addEventListener("mousemove", mousemoveAndTouchmoveEventHandler)
+            element.addEventListener("touchmove", mousemoveAndTouchmoveEventHandler)
 
-            element.addEventListener("mouseleave", () => {
+            let mouseleaveAndTouchEndEventHandler = () => {
                 gsap.to(element, {
                     x: 0,
                     y: 0,
                     duration: 0.8,
                     ease: "elastic.out(1, 0.3)"
                 })
-            })
+            }
+            element.addEventListener("mouseleave", mouseleaveAndTouchEndEventHandler)
+            element.addEventListener("touchend", mouseleaveAndTouchEndEventHandler)
         })
     }
 }
